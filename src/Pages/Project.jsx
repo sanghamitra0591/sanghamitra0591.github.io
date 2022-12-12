@@ -3,6 +3,7 @@ import { BsGithub } from "react-icons/bs";
 import { BiLinkExternal } from "react-icons/bi";
 import { useContext } from "react";
 import {ThemeContext} from "../ThemeContext/ThemeContextProvider"
+import tripadvisor from "../Images/Tripadvisor.png"
 
 
 function Project(){
@@ -10,7 +11,7 @@ function Project(){
     let projectdata= [
         {
             name: "Trip Advisor Clone",
-            img: "https://www.webintravel.com/wp-content/uploads/2018/11/tripadvisor2.jpg",
+            img: tripadvisor,
             type: "Individual",
             desc: "A travel website, where people can plan their trips, book flight, book hotels, etc User can Signin and view the home page",
             techstack: "React, Chakra UI, JavaScript, CSS",

@@ -1,6 +1,7 @@
 import { Box, Icon, Text } from "@chakra-ui/react";
 import { useContext } from "react";
 import { AiOutlineMail, AiOutlineGithub, AiOutlineLinkedin, AiOutlineLink } from "react-icons/ai";
+import { MdCall } from "react-icons/md";
 import { ThemeContext } from "../ThemeContext/ThemeContextProvider";
 import "./Page.css";
 
@@ -41,6 +42,10 @@ function Contacts(){
             <Box>
                 <Box p={["15px", "38px", "15px"]}>
                     <Text fontWeight="400" fontSize={["3xl", "4xl", "5xl"]} textAlign={["center", "left", "left"]}>Contact Me</Text>
+                    <Box display={["inline", "flex", "flex"]} gap={["", "10px", "15px"]} alignItems="center">
+                        <Icon as={MdCall} w={["40px", "30px", "40px"]} h="50px" color={darkTheme==="dark"? "white" : "#13022C"} />
+                        <Text fontSize={["sm", "md", "xl"]}>+91 7894272853</Text>
+                    </Box>
                     <Box display={["inline", "flex", "flex"]} gap={["", "10px", "15px"]} alignItems="center">
                         <Icon as={AiOutlineMail} w={["40px", "30px", "40px"]} h="50px" color={darkTheme==="dark"? "white" : "#13022C"} />
                         <Text fontSize={["sm", "md", "xl"]}>sanghamitramymail@gmail.com</Text>

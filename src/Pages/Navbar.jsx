@@ -52,7 +52,7 @@ function Navbar(){
                 <Link display="flex">
                     <AnchorLink href='#Contact'><Text color={darkTheme==="dark"? "white" : "#1a0933"} fontWeight="500" fontSize={['sm', 'sm', 'lg']}>Contact</Text></AnchorLink>
                 </Link>
-                <Text color={darkTheme==="dark"? "white" : "#1a0933"} fontWeight="500" fontSize={['sm', 'sm', 'lg']}><a href="https://drive.google.com/file/d/1Z4KoBqG3TcpKwiECWCCrMNZYrqW17KtV/view?usp=sharing" rel="noreferrer" target="_blank">Resume</a></Text>
+                <Text color={darkTheme==="dark"? "white" : "#1a0933"} fontWeight="500" fontSize={['sm', 'sm', 'lg']}><a href="https://drive.google.com/uc?export=download&id=1FiuoIKWy7jkRHJcf5Zw2J9X3NLpRqn-n" rel="noreferrer" target="_blank">Resume</a></Text>
                 <IconButton
                     aria-label="toggle theme"
                     rounded="full"

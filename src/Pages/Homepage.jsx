@@ -9,6 +9,7 @@ import Skills from "./Skillls";
 import {  AiOutlineGithub, AiOutlineLinkedin} from "react-icons/ai";
 import { useContext } from "react";
 import {ThemeContext} from "../ThemeContext/ThemeContextProvider"
+import Stats from "./Stats";
 
 
 function Homepage(){
@@ -34,7 +35,7 @@ function Homepage(){
                                 />
                             </Box>
                             <Button _hover={{bg:darkTheme==="dark"? "#C1B6DB" : "#4E406F", color:darkTheme==="dark"? "#13022c" : "white"}} mt="10px" p={["15px 15px", "20px 20px", "25px 25px"]} fontSize={["md", "lg", "xl"]} bg={darkTheme==="dark"? "#C1B6DB" : "#251942"} color={darkTheme==="dark"? "#13022c" : "white"} border="none" variant='solid' leftIcon={<DownloadIcon />}>
-                            <a href="https://drive.google.com/file/d/1FiuoIKWy7jkRHJcf5Zw2J9X3NLpRqn-n/view?usp=sharing" rel="noreferrer" target="_blank">Resume</a></Button>
+                            <a href="https://drive.google.com/uc?export=download&id=1FiuoIKWy7jkRHJcf5Zw2J9X3NLpRqn-n" rel="noreferrer" target="_blank">Resume</a></Button>
                             <Box mt="15px" gap="15px" display="flex" color="#13022c">
                                 <a href="https://github.com/sanghamitra0591" rel="noreferrer" target="_blank"><Button _hover={{bg:"#4E406F", color:"#ffffff"}} pr="0px"pl="5px" fontSize={["2xl", "3xl", "4xl"]} bg={darkTheme==="dark"? "#C1B6DB" : "#4E406F"} color={darkTheme==="dark"? "#13022c" : "white"} border="none" variant='solid' leftIcon={<AiOutlineGithub />}></Button></a>
                                 <a href="https://www.linkedin.com/in/sanghamitra-satpathy/" rel="noreferrer" target="_blank"><Button _hover={{bg:"#4E406F", color:"#ffffff"}} pr="0px" pl="5px" fontSize={["2xl", "3xl", "4xl"]} bg={darkTheme==="dark"? "#C1B6DB" : "#4E406F"} color={darkTheme==="dark"? "#13022c" : "white"} border="none" variant='solid' leftIcon={<AiOutlineLinkedin />}></Button></a>
@@ -51,6 +52,7 @@ function Homepage(){
         <About />
         <Skills />
         <Calender />
+        <Stats />
         <Project />
         <Contacts />
     </Box>
