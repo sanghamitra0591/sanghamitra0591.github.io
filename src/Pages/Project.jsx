@@ -62,7 +62,7 @@ function Project(){
     
     const {darkTheme}= useContext(ThemeContext);
 
-    return <Box id="Project" w="full" bg={darkTheme==="dark"? "#13022C" : "#d3cedb"} color={darkTheme==="dark"? "#d3cedb" : "#13022C"} p="30px 0px" textAlign="center" pt="100px">
+    return <Box id="Project" w="full" bg={darkTheme==="dark"? "#13022C" : "#d3cedb"} color={darkTheme==="dark"? "#d3cedb" : "#13022C"} p="30px 0px" textAlign="center" pt={["40px", "60px", "80px"]}>
         <Box w="85%" m="auto">
             <Text mb="25px" textAlign="center" fontWeight="400" fontSize={["3xl", "4xl", "5xl"]}>Projects</Text>
             <Box display="grid" gap="50px" gridTemplateColumns= "repeat(1, 1fr)">
@@ -78,8 +78,8 @@ function Project(){
                                         <Box display="flex" w={["100%", "80%", "100%"]} m="auto" justifyContent="space-around">
                                             {/* <Button  _hover={{bg:"#4E406F", color:"#ffffff"}} mt="10px" p={["5px 5px", "10px 10px", "10px 10px"]} fontSize={["md", "lg", ";g"]} bg="#C1B6DB" color="#13022c" border="none" variant='solid' leftIcon={<BiLinkExternal />}><a href={project.livelink} rel="noreferrer" target="_blank">Live</a></Button>
                                             <Button _hover={{bg:"#4E406F", color:"#ffffff"}} mt="10px" p={["5px 5px", "10px 10px", "10px 10px"]} fontSize={["md", "lg", "lg"]} bg="#C1B6DB" color="#13022c" border="none" variant='solid' leftIcon={<BsGithub />}><a href={project.gitlink} rel="noreferrer" target="_blank">Github</a></Button> */}
-                                            <Button as='a' target='_blank' href={project.livelink} _hover={{bg:"#4E406F", color:"#ffffff"}} mt="10px" p={["5px 5px", "10px 10px", "10px 10px"]} fontSize={["md", "lg", "lg"]} bg="#C1B6DB" color="#13022c" border="none" variant='solid' leftIcon={<BiLinkExternal />}>Live</Button>
-                                            <Button as='a' target='_blank' href={project.gitlink} _hover={{bg:"#4E406F", color:"#ffffff"}} mt="10px" p={["5px 5px", "10px 10px", "10px 10px"]} fontSize={["md", "lg", "lg"]} bg="#C1B6DB" color="#13022c" border="none" variant='solid' leftIcon={<BsGithub />}>Github</Button>
+                                            <Button as='a' target='_blank' href={project.livelink} _hover={{bg:"#4E406F", color:"#ffffff"}} mt="10px" p={["5px 5px", "10px 10px", "10px 10px"]} fontSize={["md", "lg", "lg"]} bg={darkTheme==="dark"? "#C1B6DB" : "#251942"} color={darkTheme==="dark"? "#13022c" : "white"} border="none" variant='solid' leftIcon={<BiLinkExternal />}>Live</Button>
+                                            <Button as='a' target='_blank' href={project.gitlink} _hover={{bg:"#4E406F", color:"#ffffff"}} mt="10px" p={["5px 5px", "10px 10px", "10px 10px"]} fontSize={["md", "lg", "lg"]} bg={darkTheme==="dark"? "#C1B6DB" : "#251942"} color={darkTheme==="dark"? "#13022c" : "white"} border="none" variant='solid' leftIcon={<BsGithub />}>Github</Button>
                                         </Box>
                                     </Box>
                                 </Box>

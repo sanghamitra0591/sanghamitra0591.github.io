@@ -30,10 +30,10 @@ function Navbar(){
     }, [])
 
 
-    return <Box zIndex={1} bg={isscroll? darkTheme==="dark"? "#13022c" : "#a298b3" : darkTheme==="dark"? "#13022C" : "#d2c6d2"} w="100%" p="10px 0px" boxShadow="md" color= "#ffffff" position="fixed">
+    return <Box zIndex={1} bg={isscroll? darkTheme==="dark"? "#2c2244" : "#a298b3" : darkTheme==="dark"? "#13022C" : "#d2c6d2"} w="100%" p="10px 0px" boxShadow="md" color= "#ffffff" position="fixed">
         <Box w="95%" m="auto" display={["flex", "flex", "flex"]} alignItems="center" justifyContent="space-between">
             <Box rounded="50%" mt="5px" mb="5px">
-                <Image w={["30px", "30px", "40px"]} src="https://seeklogo.com/images/S/s-letter-logo-3FDB009CF3-seeklogo.com.png" alt="logo" />
+                <AnchorLink href='#Home'><Image w={["30px", "30px", "40px"]} src="https://seeklogo.com/images/S/s-letter-logo-3FDB009CF3-seeklogo.com.png" alt="logo" /></AnchorLink>
             </Box>
             {/* <Text fontWeight="bold" ml={["15px", "2px", "10px"]} fontSize={['xl', '2xl', '3xl']}>Sanghamitra</Text> */}
             <Box display={["none", "none", "flex"]} gap={["auto", "15px", "20px"]} justifyContent={["space-around", "space-between", "space-between"]} ml="10px" alignItems="center">

@@ -144,7 +144,7 @@ function Skills(){
 
 return <Box id="Skills" w="full" bg={darkTheme==="dark"? "#13022C" : "#d3cedb"} color="#ffffff" p="30px 0px" mt="-2px" pt="100px">
         <Box w="85%" m="auto" color={darkTheme==="dark"? "white" : "#13022C"}>
-            <Text textAlign="center" mb="15px" fontWeight="400" fontSize={["3xl", "4xl", "5xl"]}>Technical Skills</Text>
+            <Text textAlign="center" mb="15px" fontWeight="400" fontSize={["3xl", "4xl", "5xl"]}>Technical Skills & Tools</Text>
             <Tabs variant='unstyled'>
                 <TabList m="20px auto" w={["80%", "85%", "55%"]} gap="5px" justifyContent="space-between">
                     <Tab p={["5px", "10px", "10px 15px"]} fontSize={["10px", "15px", "20px"]} bg={darkTheme==="dark"?"#4E406F": "#9c8ebe"} _selected={darkTheme==="dark"? {color:'#13022c', bg:'#C1B6DB'} : {color:'white', bg:'#423267'}}>All Skills</Tab>

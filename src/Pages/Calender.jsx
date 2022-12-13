@@ -3,6 +3,7 @@ import GitHubCalendar from "react-github-calendar";
 import { Row } from "react-bootstrap";
 import { Box, Text } from "@chakra-ui/react";
 import { ThemeContext } from "../ThemeContext/ThemeContextProvider";
+import ReactTooltip from "react-tooltip";
 
 function Calender() {
   const {darkTheme}= useContext(ThemeContext);
@@ -17,7 +18,9 @@ function Calender() {
                 blockMargin={5}
                 color={darkTheme==="dark"? "#5e0adb" : "#13022C"}
                 fontSize={15}
-            />
+            >
+            <ReactTooltip delayShow={10} html />
+            </GitHubCalendar>
             </Row>
         </Box>
     </Box>
