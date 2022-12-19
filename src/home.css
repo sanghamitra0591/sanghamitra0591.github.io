@@ -4,6 +4,12 @@
     background: linear-gradient(180deg, rgba(255,248,234,1) 0%, rgba(165,127,126,1) 100%); */
 }
 
+.rotateyes{
+    transform: rotate(180deg);
+    transition-property: transform;
+    transition-duration: 1s;
+}
+
 .wrapper{
     width: 100%;
     height: 700px;

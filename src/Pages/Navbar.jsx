@@ -5,6 +5,7 @@ import AnchorLink from "react-anchor-link-smooth-scroll";
 import { ThemeContext } from "../ThemeContext/ThemeContextProvider";
 import { CloseIcon, HamburgerIcon } from "@chakra-ui/icons";
 import { FaMoon, FaSun } from "react-icons/fa";
+import "../home.css";
 
 
 function Navbar(){
@@ -32,7 +33,7 @@ function Navbar(){
 
     return <Box zIndex={1} bg={isscroll? darkTheme==="dark"? "#2c2244" : "#a298b3" : darkTheme==="dark"? "#13022C" : "#d2c6d2"} w="100%" p="10px 0px" boxShadow="md" color= "#ffffff" position="fixed">
         <Box w="95%" m="auto" display={["flex", "flex", "flex"]} alignItems="center" justifyContent="space-between">
-            <Box rounded="50%" mt="5px" mb="5px">
+            <Box rounded="50%" mt="5px" mb="5px" className={darkTheme==="dark"? "rotateno":"rotateyes"}>
                 <AnchorLink href='#Home'><Image w={["30px", "30px", "40px"]} src="https://seeklogo.com/images/S/s-letter-logo-3FDB009CF3-seeklogo.com.png" alt="logo" /></AnchorLink>
             </Box>
             {/* <Text fontWeight="bold" ml={["15px", "2px", "10px"]} fontSize={['xl', '2xl', '3xl']}>Sanghamitra</Text> */}
@@ -75,7 +76,7 @@ function Navbar(){
             <AnchorLink href='#Skills' onClick={()=> changeDisplay('none')} ><Text _hover={{fontSize:"4xl"}} > Skills</Text></AnchorLink>
             <AnchorLink href='#Project' onClick={()=> changeDisplay('none')} ><Text _hover={{fontSize:"4xl"}} > Projects</Text></AnchorLink>
             <AnchorLink href='#Contact' onClick={()=> changeDisplay('none')} ><Text _hover={{fontSize:"4xl"}} > Contact</Text></AnchorLink>
-            <Text _hover={{textDecoration:"none", fontSize:"4xl"}} ><a href="https://drive.google.com/file/d/1Z4KoBqG3TcpKwiECWCCrMNZYrqW17KtV/view?usp=sharing" rel="noreferrer" target="_blank"> Resume</a></Text>
+            <Text _hover={{textDecoration:"none", fontSize:"4xl"}} ><a href="https://drive.google.com/uc?export=download&id=1FiuoIKWy7jkRHJcf5Zw2J9X3NLpRqn-n" rel="noreferrer" target="_blank"> Resume</a></Text>
             <Box textAlign="center">
                 <IconButton
                     aria-label="toggle theme"

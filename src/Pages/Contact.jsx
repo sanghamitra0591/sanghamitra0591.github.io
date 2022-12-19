@@ -44,11 +44,11 @@ function Contacts(){
                     <Text fontWeight="400" fontSize={["3xl", "4xl", "5xl"]} textAlign={["center", "left", "left"]}>Contact Me</Text>
                     <Box display={["inline", "flex", "flex"]} gap={["", "10px", "15px"]} alignItems="center">
                         <Icon as={MdCall} w={["40px", "30px", "40px"]} h="50px" color={darkTheme==="dark"? "white" : "#13022C"} />
-                        <Text fontSize={["sm", "md", "xl"]}>+91 7894272853</Text>
+                        <Text textDecoration="underline" fontSize={["sm", "md", "xl"]}><a href="tel:7894272853" rel="noreferrer" target="_blank">+91-7894272853</a></Text>
                     </Box>
                     <Box display={["inline", "flex", "flex"]} gap={["", "10px", "15px"]} alignItems="center">
                         <Icon as={AiOutlineMail} w={["40px", "30px", "40px"]} h="50px" color={darkTheme==="dark"? "white" : "#13022C"} />
-                        <Text fontSize={["sm", "md", "xl"]}>sanghamitramymail@gmail.com</Text>
+                        <Text textDecoration="underline" fontSize={["sm", "md", "xl"]}><a href = "mailto: sanghamitramymail@gmail.com" rel="noreferrer" target="_blank">sanghamitramymail@gmail.com</a></Text>
                     </Box>
                     <Box display={["inline", "flex", "flex"]} gap={["", "10px", "15px"]} alignItems="center">
                         <Icon as={AiOutlineGithub} w={["40px", "30px", "40px"]} h="50px" color={darkTheme==="dark"? "white" : "#13022C"} />
