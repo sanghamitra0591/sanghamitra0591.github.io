@@ -1,8 +1,10 @@
 {
   "files": {
-    "main.css": "/static/css/main.fe2a1501.css",
-    "main.js": "/static/js/main.7ff99cb5.js",
+    "main.css": "/static/css/main.50593110.css",
+    "main.js": "/static/js/main.c8d35e0e.js",
     "static/js/787.1ed0c42c.chunk.js": "/static/js/787.1ed0c42c.chunk.js",
+    "static/media/mypic.jpg": "/static/media/mypic.cdf4ee7c7ce7c2b97643.jpg",
+    "static/media/aboutgif.gif": "/static/media/aboutgif.a50a087d3e8aad894f33.gif",
     "static/media/mealdb.PNG": "/static/media/mealdb.92797660534772cf2281.PNG",
     "static/media/Tripadvisor.png": "/static/media/Tripadvisor.3c0dcce52fb1b0bb0a36.png",
     "static/media/album-maker.PNG": "/static/media/album-maker.f99fa1fd899f15d1fe9e.PNG",
@@ -10,12 +12,12 @@
     "static/media/google-digital-garage.PNG": "/static/media/google-digital-garage.2c1e2235e3e00cf9de35.PNG",
     "static/media/nordstorm.png": "/static/media/nordstorm.3ad099073a10642675e6.png",
     "index.html": "/index.html",
-    "main.fe2a1501.css.map": "/static/css/main.fe2a1501.css.map",
-    "main.7ff99cb5.js.map": "/static/js/main.7ff99cb5.js.map",
+    "main.50593110.css.map": "/static/css/main.50593110.css.map",
+    "main.c8d35e0e.js.map": "/static/js/main.c8d35e0e.js.map",
     "787.1ed0c42c.chunk.js.map": "/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.fe2a1501.css",
-    "static/js/main.7ff99cb5.js"
+    "static/css/main.50593110.css",
+    "static/js/main.c8d35e0e.js"
   ]
 }
