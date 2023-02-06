@@ -6,9 +6,9 @@ import { createContext } from "react";
 export const ThemeContext= createContext();
 
 const ThemeContextProvider= ({children})=>{
-    const [darkTheme, setdarkTheme]= useState("light");
+    const [darktheme, setdarktheme]= useState("dark");
     
-    return <ThemeContext.Provider value={{darkTheme, setdarkTheme}}>{children}</ThemeContext.Provider>
+    return <ThemeContext.Provider value={{darktheme, setdarktheme}}>{children}</ThemeContext.Provider>
 }
 
 export default ThemeContextProvider;
