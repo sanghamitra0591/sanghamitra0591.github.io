@@ -1,5 +1,4 @@
-import { Box, Button, Icon, Text, Input, Textarea, Divider, useColorMode } from "@chakra-ui/react";
-import { useContext } from "react";
+import { Box, Button, Icon, Text, Input, Textarea, useColorMode, useToast } from "@chakra-ui/react";
 import { AiOutlineMail, AiOutlineGithub, AiOutlineLinkedin, AiOutlineLink } from "react-icons/ai";
 import { MdCall, MdSend } from "react-icons/md";
 import { ThemeContext } from "../ThemeContext/ThemeContextProvider";
@@ -8,17 +7,16 @@ import React from 'react';
 import emailjs from '@emailjs/browser';
 import "./Page.css";
 import { useState } from "react";
-import { useNavigate } from "react-router-dom";
 
 function Contacts(){
 
     const { toggleColorMode, colorMode } = useColorMode();
 
-    const navigate= useNavigate();
+    const toast = useToast();
 
     const [values, setValues] = useState({
-        from_name: '',
-        email_id: '',
+        fullName: '',
+        email: '',
         message: ''
     });
 
@@ -33,6 +31,12 @@ function Contacts(){
             email: '',
             message: ''
             });
+            toast({
+                title: 'Message Sent.',
+                status: 'success',
+                duration: 3000,
+                isClosable: true
+            })
         }, error => {
             console.log('FAILED...', error);
         });

@@ -9,23 +9,40 @@ import meanbuy from "../Images/meanbuy.PNG";
 import albummaker from "../Images/album-maker.PNG";
 import recipeapp from "../Images/mealdb.PNG";
 import nordstorm from "../Images/nordstorm.png";
+import healthkart from "../Images/healthkart.PNG";
+import licious from "../Images/licious.PNG";
+import portfoliolight from "../Images/portfoliolight.PNG";
+import portfoliodark from "../Images/portfoliodark.PNG";
 
 
 function Project(){
 
+    
+    const { toggleColorMode, colorMode } = useColorMode();
+
     let projectdata= [
         {
             id: 1,
-            name: "Trip Advisor Clone",
-            img: tripadvisor,
-            type: "Individual",
-            desc: "A travel website, where user can login, signup, plan their trips, book flight, book hotels, wishlist the trips, view nearby restaurants, search by location etc.",
-            techstack: "React, Chakra UI, JavaScript, CSS",
-            livelink: "https://tripadvisor-clone1.vercel.app/",
+            name: "Healthkart Clone",
+            img: healthkart,
+            type: "Group",
+            desc: "A Health, Nutritional website, where user can login, signup, visit various product pages, filter and sort according to their needs ans place order.",
+            techstack: "React, Chakra UI, JavaScript, CSS, Bootstrap, Node.js, Express, MongoDB",
+            livelink: "https://health-mart-frontend.vercel.app/",
             gitlink: "https://github.com/sanghamitra0591/low-head-7683/tree/main/tripadvisor"
         },
         {
             id: 2,
+            name: "Licious Clone",
+            img: licious,
+            type: "Group",
+            techstack: "React, Chakra UI, JavaScript, CSS, Node.js, Express, MongoDB",
+            desc: "An online meat delivery platform, where user can view products (meat, fish & seafood), use filter and sort, add products to cart and place order.",
+            livelink: "https://meat-munchies.vercel.app/",
+            gitlink: "https://github.com/sanghamitra0591/meat-munchies"
+        },
+        {
+            id: 3,
             name: "Nordstorm Clone",
             img: nordstorm,
             type: "Group",
@@ -33,16 +50,6 @@ function Project(){
             desc: "An E-Commerce website where user can login, signup, view products, use filter and sort, add products to cart and place order after payment",
             livelink: "https://makeshift-thread-5916-sankalp2009.vercel.app/",
             gitlink: "https://github.com/yadavsankt24/makeshift-thread-5916"
-        },
-        {
-            id: 3,
-            name: "Meanbuy Clone",
-            img: meanbuy,
-            type: "Individual",
-            desc: "An E-Commerce website having the unique feature which allows the users to sell their products as well. User can Login, Signup, Visit Seller's Page, Whatsapp Page, view products, add products to the cart etc.",
-            techstack: "HTML, CSS, JavaScript",
-            livelink: "https://meanbuy-clone-theta.vercel.app/",
-            gitlink: "https://github.com/sanghamitra0591/murky-rate-2238"
         },
         {
             id: 4,
@@ -73,11 +80,38 @@ function Project(){
             desc: "An app which provides various recipies to user by searching, also have random recipies and recipe of the day",
             livelink: "https://receipe.vercel.app/",
             gitlink: "https://github.com/sanghamitra0591/exploring/tree/main/food-app-II"
+        },
+        {
+            id: 7,
+            name: "Meanbuy Clone",
+            img: meanbuy,
+            type: "Individual",
+            desc: "An E-Commerce website having the unique feature which allows the users to sell their products as well. User can Login, Signup, Visit Seller's Page, Whatsapp Page, view products, add products to the cart etc.",
+            techstack: "HTML, CSS, JavaScript",
+            livelink: "https://meanbuy-clone-theta.vercel.app/",
+            gitlink: "https://github.com/sanghamitra0591/murky-rate-2238"
+        },
+        {
+            id: 8,
+            name: "Trip Advisor Clone",
+            img: tripadvisor,
+            type: "Individual",
+            desc: "A travel website, where user can login, signup, plan their trips, book flight, book hotels, wishlist the trips, view nearby restaurants, search by location etc.",
+            techstack: "React, Chakra UI, JavaScript, CSS",
+            livelink: "https://tripadvisor-clone1.vercel.app/",
+            gitlink: "https://github.com/sanghamitra0591/low-head-7683/tree/main/tripadvisor"
+        },
+        {
+            id: 9,
+            name: "My Portfolio",
+            img: (colorMode==="dark" ? portfoliolight : portfoliodark),
+            type: "Individual",
+            desc: "This is my portfolio which I made using React, Chakra UI, CSS, Javascript and Email.js. I have added features like theme, Chakra tabs, Email.js, which is fully responsive.",
+            techstack: "React, Chakra UI, JavaScript, CSS, Email.js",
+            livelink: "https://sanghamitra0591.github.io/",
+            gitlink: "https://github.com/sanghamitra0591/sanghamitra0591.github.io"
         }
     ]
-
-    
-    const { toggleColorMode, colorMode } = useColorMode();
 
 
     return <Box id="Project" w="full" bg={colorMode==="dark"? "#13022C" : "#d3cedb"} color={colorMode==="dark"? "#d3cedb" : "#13022C"} p="30px 0px" textAlign="center" pt={["40px", "60px", "80px"]}>

@@ -37,7 +37,7 @@ function About(){
                 <Box>
                     <Box className="aboutcircle" rounded="50%" padding={["6px", "8px", "10px"]} bg="url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbpISbEAgaxcUr-mYQDRlSq_91HzaBWMECMQ&usqp=CAU)">
                         <Box className="aboutinner" display="flex" justifyContent="center" alignItems="center" boxSize={["45px", "60px", "80px"]} rounded="50%" bg="url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsvtJvtIPahIGUcO6pJaei-I41Wi7fScoXrA&usqp=CAU)" >
-                            <Text color="#13022c" fontWeight="bold" fontSize={["sm", "lg", "xl"]}>500+</Text>
+                            <Text color="#13022c" fontWeight="bold" fontSize={["sm", "lg", "xl"]}>700+</Text>
                         </Box>
                     </Box>
                     <Box>

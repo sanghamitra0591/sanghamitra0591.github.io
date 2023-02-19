@@ -2,8 +2,9 @@ import { Box, Icon, Tab, TabList, TabPanel, TabPanels, Tabs, Text, useColorMode 
 import { TbBrandJavascript } from 'react-icons/tb';
 import { ImHtmlFive2 } from "react-icons/im";
 import { RiCss3Fill, RiReactjsFill } from "react-icons/ri";
-import { SiChakraui, SiExpress, SiMongodb, SiRedux, SiMaterialui, SiCypress, SiNpm, SiNetlify, SiVisualstudiocode } from "react-icons/si";
+import { SiChakraui, SiExpress, SiMongodb, SiRedux, SiMaterialui, SiCypress, SiNpm, SiNetlify, SiVisualstudiocode, SiVercel, SiPostman } from "react-icons/si";
 import { FaGitAlt, FaNode } from "react-icons/fa";
+import { AiFillThunderbolt } from "react-icons/ai";
 import "./Page.css";
 import { useContext } from "react";
 import { ThemeContext } from "../ThemeContext/ThemeContextProvider";
@@ -37,11 +38,11 @@ function Skills(){
             text: "Chakra UI",
             iconas: SiChakraui,
         },
-        {
-            id: 6,
-            text: "Material UI",
-            iconas: SiMaterialui,
-        },
+        // {
+        //     id: 6,
+        //     text: "Material UI",
+        //     iconas: SiMaterialui,
+        // },
         {
             id: 7,
             text: "Redux",
@@ -57,11 +58,11 @@ function Skills(){
             text: "Node JS",
             iconas: FaNode,
         },
-        {
-            id: 10,
-            text: "Cypress",
-            iconas: SiCypress,
-        },
+        // {
+        //     id: 10,
+        //     text: "Cypress",
+        //     iconas: SiCypress,
+        // },
         {
             id: 11,
             text: "Express JS",
@@ -84,8 +85,23 @@ function Skills(){
         },
         {
             id: 15,
-            text: "VS Code",
+            text: "VS code",
             iconas: SiVisualstudiocode,
+        },
+        {
+            id: 16,
+            text: "Vercel",
+            iconas: SiVercel,
+        },
+        {
+            id: 17,
+            text: "Thunder Client",
+            iconas: AiFillThunderbolt,
+        },
+        {
+            id: 18,
+            text: "Postman",
+            iconas: SiPostman,
         }
     ]
     const frontend= [
@@ -114,11 +130,11 @@ function Skills(){
             text: "Chakra UI",
             iconas: SiChakraui,
         },
-        {
-            id: 6,
-            text: "Material UI",
-            iconas: SiMaterialui,
-        },
+        // {
+        //     id: 6,
+        //     text: "Material UI",
+        //     iconas: SiMaterialui,
+        // },
         {
             id: 7,
             text: "Redux",
@@ -136,11 +152,11 @@ function Skills(){
             text: "Node JS",
             iconas: FaNode,
         },
-        {
-            id: 3,
-            text: "Cypress",
-            iconas: SiCypress,
-        },
+        // {
+        //     id: 3,
+        //     text: "Cypress",
+        //     iconas: SiCypress,
+        // },
         {
             id: 4,
             text: "Express JS",
@@ -167,6 +183,21 @@ function Skills(){
             id: 4,
             text: "VS Code",
             iconas: SiVisualstudiocode,
+        },
+        {
+            id: 5,
+            text: "Vercel",
+            iconas: SiVercel,
+        },
+        {
+            id: 6,
+            text: "Thunder Client",
+            iconas: AiFillThunderbolt,
+        },
+        {
+            id: 7,
+            text: "Postman",
+            iconas: SiPostman,
         }
     ]
 

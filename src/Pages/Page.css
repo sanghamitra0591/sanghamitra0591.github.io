@@ -39,14 +39,14 @@
     background-image: linear-gradient( 359.4deg,  rgba(12,20,69,1) -16.9%, rgba(71,30,84,1) 119.9% );
     transform: rotate3d(1, 1, 1, 360deg);
     transition-property: transform;
-    transition-duration: 20s;
+    transition-duration: 15s;
 }
 .skillinnerlight:hover{
     background: rgb(183,164,210);
     background: linear-gradient(180deg, rgba(183,164,210,1) 17%, rgba(148,125,180,1) 43%, rgba(89,79,103,1) 92%);
     transform: rotate3d(1, 1, 1, 360deg);
     transition-property: transform;
-    transition-duration: 20s;
+    transition-duration: 15s;
 }
 .projectouter{
     border: 2.5px solid rgba(200, 137, 230, 0.637);
@@ -64,16 +64,18 @@
     background: rgb(133,131,156);
     background: linear-gradient(120deg, rgba(133,131,156,1) 2%, rgba(207,204,226,1) 53%, rgba(140,138,152,1) 94%);
     transform: scale(1.02);
+    padding: 15px;
     transition-property: transform;
-    transition-duration: 1.5s;
+    transition-duration: 3.5s;
 }
 .projectouter:hover{
     border: 3.5px solid rgba(200, 137, 230, 0.637);
     background: #2b273b;
     background-image: linear-gradient( 359.4deg,  rgba(12,20,69,1) -16.9%, rgba(71,30,84,1) 119.9% );
     transform: scale(1.02);
+    padding: 12px;
     transition-property: transform;
-    transition-duration: 1.5s;
+    transition-duration: 3.5s;
 }
 
 .contact{

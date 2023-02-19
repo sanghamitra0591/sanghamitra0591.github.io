@@ -24,7 +24,7 @@ const Stats = () => {
         </Link>
       </Box>
  
-      <Box w={["80%", "70%", "60%"]} display= "flex" m="auto" mt={["", "10px", "0px"]} gap="10px">
+      <Box w={["80%", "62%", "60%"]} display= "flex" m="auto" mt={["", "10px", "0px"]} gap="10px">
         <Link href="https://github.com/sanghamitra0591">  
           <Image
             align="center" h={["", "120px", "300px"]}
