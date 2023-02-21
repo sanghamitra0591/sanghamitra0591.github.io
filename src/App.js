@@ -46,8 +46,10 @@ function App() {
             <Stats />
             <Project />
             <Contacts />
-            <Box p="10px 0px" w="95%" m="auto" bg={colorMode==="dark"? "#13022C" : "#d3cedb"}>
-              <Text fontWeight="bold" fontSize={["xs", "sm", "md"]} color={colorMode==="dark"? "white" : "#13022C"} textAlign="center">Designed and developed by Sanghamitra Satpathy, @2022 All rights reserved</Text>
+            <Box>
+              <Box p="10px 0px" w="95%" m="auto" bg={colorMode==="dark"? "#13022C" : "#d3cedb"}>
+                <Text fontWeight="bold" fontSize={["xs", "sm", "md"]} color={colorMode==="dark"? "white" : "#13022C"} textAlign="center">Designed and developed by Sanghamitra Satpathy, @2022 All rights reserved</Text>
+              </Box>
             </Box>
           </div>
         {/* </div> */}

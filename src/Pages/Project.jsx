@@ -28,7 +28,7 @@ function Project(){
             type: "Group",
             desc: "A Health, Nutritional website, where user can login, signup, visit various product pages, filter and sort according to their needs ans place order.",
             techstack: "React, Chakra UI, JavaScript, CSS, Bootstrap, Node.js, Express, MongoDB",
-            livelink: "https://health-mart-frontend.vercel.app/",
+            livelink: "https://healthkart-clone-git-master-vivekjawale.vercel.app/",
             gitlink: "https://github.com/sanghamitra0591/low-head-7683/tree/main/tripadvisor"
         },
         {
