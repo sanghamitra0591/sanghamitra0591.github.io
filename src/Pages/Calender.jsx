@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React from "react";
 import GitHubCalendar from "react-github-calendar";
 import { Row } from "react-bootstrap";
 import { Box, Text, useColorMode } from "@chakra-ui/react";

@@ -4,8 +4,6 @@ import './home.css';
 import Navbar from './Pages/Navbar';
 import "./Pages/Page.css";
 import Allroutes from "./Components/Allroutes"
-import { useContext } from 'react';
-import { ThemeContext } from './ThemeContext/ThemeContextProvider';
 import About from './Pages/About';
 import Skills from './Pages/Skillls';
 import Calender from './Pages/Calender';
@@ -33,7 +31,7 @@ function App() {
   //     return false;
   // };
 
-  const { toggleColorMode, colorMode } = useColorMode();
+  const { colorMode } = useColorMode();
     return (
       <div className='App'>
         {/* <div class="svg"> */}

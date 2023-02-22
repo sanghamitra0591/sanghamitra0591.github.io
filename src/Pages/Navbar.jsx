@@ -1,8 +1,7 @@
 import { Box, Flex, IconButton, Image, Text, useColorMode } from "@chakra-ui/react";
-import { useContext, useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import {Link} from "react-router-dom";
 import AnchorLink from "react-anchor-link-smooth-scroll";
-import { ThemeContext } from "../ThemeContext/ThemeContextProvider";
 import { CloseIcon, HamburgerIcon } from "@chakra-ui/icons";
 import { FaMoon, FaSun } from "react-icons/fa";
 import "../home.css";
@@ -13,7 +12,6 @@ function Navbar(){
 
     const [isscroll, setisscroll] = useState(false);
     const { toggleColorMode, colorMode } = useColorMode();
-    const {lighttheme, setlighttheme}= useContext(ThemeContext || colorMode);
     const [display,changeDisplay] = useState('none');
 
 
@@ -30,6 +28,8 @@ function Navbar(){
         window.removeEventListener("scroll");
         }
     }, [])
+
+    console.log(colorMode);
 
 
     return <Box zIndex={1} bg={isscroll? colorMode==="light"? "#2c2244" : "#a298b3" : colorMode==="light"? "#13022C" : "#d2c6d2"} w="100%" p="10px 0px" boxShadow="md" color= "#ffffff" position="fixed">

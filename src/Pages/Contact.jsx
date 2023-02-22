@@ -1,4 +1,4 @@
-import { Box, Button, Icon, Text, Input, Textarea, useColorMode, useToast } from "@chakra-ui/react";
+import { Box, Button, Text, Input, Textarea, useColorMode, useToast } from "@chakra-ui/react";
 import { AiOutlineMail, AiOutlineGithub, AiOutlineLinkedin } from "react-icons/ai";
 import { MdCall, MdSend } from "react-icons/md";
 import "./Page.css";

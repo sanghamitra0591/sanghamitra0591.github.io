@@ -102,7 +102,7 @@ function Project(){
         {
             id: 9,
             name: "My Portfolio",
-            img: (colorMode==="light" ? portfoliodark : portfoliolight),
+            img: (colorMode==="light" ? portfoliolight : portfoliodark),
             type: "Individual",
             desc: "This is my portfolio which I made using React, Chakra UI, CSS, Javascript and Email.js. I have added features like theme, Chakra tabs, Email.js, which is fully responsive.",
             techstack: "React, Chakra UI, JavaScript, CSS, Email.js",
