@@ -1,8 +1,6 @@
 import { Box, Button, Image, Text, useColorMode } from "@chakra-ui/react";
 import { BsGithub } from "react-icons/bs";
 import { BiLinkExternal } from "react-icons/bi";
-import { useContext } from "react";
-import {ThemeContext} from "../ThemeContext/ThemeContextProvider";
 import tripadvisor from "../Images/Tripadvisor.png";
 import googledigitalgarage from "../Images/google-digital-garage.PNG";
 import meanbuy from "../Images/meanbuy.PNG";
@@ -18,7 +16,7 @@ import portfoliodark from "../Images/portfoliodark.PNG";
 function Project(){
 
     
-    const { toggleColorMode, colorMode } = useColorMode();
+    const { colorMode } = useColorMode();
 
     let projectdata= [
         {
@@ -104,7 +102,7 @@ function Project(){
         {
             id: 9,
             name: "My Portfolio",
-            img: (colorMode==="dark" ? portfoliolight : portfoliodark),
+            img: (colorMode==="light" ? portfoliodark : portfoliolight),
             type: "Individual",
             desc: "This is my portfolio which I made using React, Chakra UI, CSS, Javascript and Email.js. I have added features like theme, Chakra tabs, Email.js, which is fully responsive.",
             techstack: "React, Chakra UI, JavaScript, CSS, Email.js",
@@ -113,13 +111,12 @@ function Project(){
         }
     ]
 
-
-    return <Box id="Project" w="full" bg={colorMode==="dark"? "#13022C" : "#d3cedb"} color={colorMode==="dark"? "#d3cedb" : "#13022C"} p="30px 0px" textAlign="center" pt={["40px", "60px", "80px"]}>
+    return <Box id="Project" w="full" bg={colorMode==="light"? "#13022C" : "#d3cedb"} color={colorMode==="light"? "#d3cedb" : "#13022C"} p="30px 0px" textAlign="center" pt={["40px", "60px", "80px"]}>
         <Box w="85%" m="auto">
-            <Text mb="25px" color={colorMode==="dark"? "white" : "#13022C"} textAlign="center" fontWeight="400" fontSize={["3xl", "4xl", "5xl"]}>Projects</Text>
+            <Text mb="25px" color={colorMode==="light"? "white" : "#13022C"} textAlign="center" fontWeight="400" fontSize={["3xl", "4xl", "5xl"]}>Projects</Text>
             <Box display="grid" gap="30px" gridTemplateColumns={["repeat(1, 1fr)", "repeat(2, 1fr)", "repeat(3, 1fr)"]}>
                 {projectdata && projectdata.map((project)=> {
-                    return <Box key={project.id} className={colorMode==="dark"?"projectouter": "projectouterlight"}>
+                    return <Box key={project.id} className={colorMode==="light"?"projectouter": "projectouterlight"}>
                                 <Box>
                                     <Image w="100%" src={project.img} alt="project-thumbnail" />
                                     <Box w="100%">
@@ -130,8 +127,8 @@ function Project(){
                                         <Box display="flex" w={["100%", "100%", "100%"]} m="auto" justifyContent="space-around">
                                             {/* <Button  _hover={{bg:"#4E406F", color:"#ffffff"}} mt="10px" p={["5px 5px", "10px 10px", "10px 10px"]} fontSize={["md", "lg", ";g"]} bg="#C1B6DB" color="#13022c" border="none" variant='solid' leftIcon={<BiLinkExternal />}><a href={project.livelink} rel="noreferrer" target="_blank">Live</a></Button>
                                             <Button _hover={{bg:"#4E406F", color:"#ffffff"}} mt="10px" p={["5px 5px", "10px 10px", "10px 10px"]} fontSize={["md", "lg", "lg"]} bg="#C1B6DB" color="#13022c" border="none" variant='solid' leftIcon={<BsGithub />}><a href={project.gitlink} rel="noreferrer" target="_blank">Github</a></Button> */}
-                                            <Button as='a' target='_blank' href={project.livelink} _hover={{bg:"#4E406F", color:"#ffffff"}} mt="10px" p={["5px 5px", "5px 5px", "10px 10px"]} fontSize={["sm", "sm", "md"]} bg={colorMode==="dark"? "#C1B6DB" : "#251942"} color={colorMode==="dark"? "#13022c" : "white"} border="none" variant='solid' leftIcon={<BiLinkExternal />}>Live</Button>
-                                            <Button as='a' target='_blank' href={project.gitlink} _hover={{bg:"#4E406F", color:"#ffffff"}} mt="10px" p={["5px 5px", "5px 5px", "10px 10px"]} fontSize={["sm", "sm", "md"]} bg={colorMode==="dark"? "#C1B6DB" : "#251942"} color={colorMode==="dark"? "#13022c" : "white"} border="none" variant='solid' leftIcon={<BsGithub />}>Github</Button>
+                                            <Button as='a' target='_blank' href={project.livelink} _hover={{bg:"#4E406F", color:"#ffffff"}} mt="10px" p={["5px 5px", "5px 5px", "10px 10px"]} fontSize={["sm", "sm", "md"]} bg={colorMode==="light"? "#C1B6DB" : "#251942"} color={colorMode==="light"? "#13022c" : "white"} border="none" variant='solid' leftIcon={<BiLinkExternal />}>Live</Button>
+                                            <Button as='a' target='_blank' href={project.gitlink} _hover={{bg:"#4E406F", color:"#ffffff"}} mt="10px" p={["5px 5px", "5px 5px", "10px 10px"]} fontSize={["sm", "sm", "md"]} bg={colorMode==="light"? "#C1B6DB" : "#251942"} color={colorMode==="light"? "#13022c" : "white"} border="none" variant='solid' leftIcon={<BsGithub />}>Github</Button>
                                         </Box>
                                     </Box>
                                 </Box>
@@ -142,12 +139,12 @@ function Project(){
     </Box>
 
 
-    // return <Box id="Project" w="full" bg={colorMode==="dark"? "#13022C" : "#d3cedb"} color={colorMode==="dark"? "#d3cedb" : "#13022C"} p="30px 0px" textAlign="center" pt={["40px", "60px", "80px"]}>
+    // return <Box id="Project" w="full" bg={colorMode==="light"? "#13022C" : "#d3cedb"} color={colorMode==="light"? "#d3cedb" : "#13022C"} p="30px 0px" textAlign="center" pt={["40px", "60px", "80px"]}>
     //     <Box w="85%" m="auto">
     //         <Text mb="25px" textAlign="center" fontWeight="400" fontSize={["3xl", "4xl", "5xl"]}>Projects</Text>
     //         <Box display="grid" gap="50px" gridTemplateColumns= "repeat(1, 1fr)">
     //             {projectdata && projectdata.map((project)=> {
-    //                 return <Box className={colorMode==="dark"?"projectouter": "projectouterlight"}>
+    //                 return <Box className={colorMode==="light"?"projectouter": "projectouterlight"}>
     //                             <Box display={["inline", "inline", "flex"]} justifyContent="space-between">
     //                                 <Image w={["100%", "97%", "60%"]} m="auto" src={project.img} alt="project-thumbnail" />
     //                                 <Box w={["100%", "97%", "39%"]} m="auto">
@@ -158,8 +155,8 @@ function Project(){
     //                                     <Box display="flex" w={["100%", "80%", "100%"]} m="auto" justifyContent="space-around">
     //                                         {/* <Button  _hover={{bg:"#4E406F", color:"#ffffff"}} mt="10px" p={["5px 5px", "10px 10px", "10px 10px"]} fontSize={["md", "lg", ";g"]} bg="#C1B6DB" color="#13022c" border="none" variant='solid' leftIcon={<BiLinkExternal />}><a href={project.livelink} rel="noreferrer" target="_blank">Live</a></Button>
     //                                         <Button _hover={{bg:"#4E406F", color:"#ffffff"}} mt="10px" p={["5px 5px", "10px 10px", "10px 10px"]} fontSize={["md", "lg", "lg"]} bg="#C1B6DB" color="#13022c" border="none" variant='solid' leftIcon={<BsGithub />}><a href={project.gitlink} rel="noreferrer" target="_blank">Github</a></Button> */}
-    //                                         <Button as='a' target='_blank' href={project.livelink} _hover={{bg:"#4E406F", color:"#ffffff"}} mt="10px" p={["5px 5px", "10px 10px", "10px 10px"]} fontSize={["md", "lg", "lg"]} bg={colorMode==="dark"? "#C1B6DB" : "#251942"} color={colorMode==="dark"? "#13022c" : "white"} border="none" variant='solid' leftIcon={<BiLinkExternal />}>Live</Button>
-    //                                         <Button as='a' target='_blank' href={project.gitlink} _hover={{bg:"#4E406F", color:"#ffffff"}} mt="10px" p={["5px 5px", "10px 10px", "10px 10px"]} fontSize={["md", "lg", "lg"]} bg={colorMode==="dark"? "#C1B6DB" : "#251942"} color={colorMode==="dark"? "#13022c" : "white"} border="none" variant='solid' leftIcon={<BsGithub />}>Github</Button>
+    //                                         <Button as='a' target='_blank' href={project.livelink} _hover={{bg:"#4E406F", color:"#ffffff"}} mt="10px" p={["5px 5px", "10px 10px", "10px 10px"]} fontSize={["md", "lg", "lg"]} bg={colorMode==="light"? "#C1B6DB" : "#251942"} color={colorMode==="light"? "#13022c" : "white"} border="none" variant='solid' leftIcon={<BiLinkExternal />}>Live</Button>
+    //                                         <Button as='a' target='_blank' href={project.gitlink} _hover={{bg:"#4E406F", color:"#ffffff"}} mt="10px" p={["5px 5px", "10px 10px", "10px 10px"]} fontSize={["md", "lg", "lg"]} bg={colorMode==="light"? "#C1B6DB" : "#251942"} color={colorMode==="light"? "#13022c" : "white"} border="none" variant='solid' leftIcon={<BsGithub />}>Github</Button>
     //                                     </Box>
     //                                 </Box>
     //                             </Box>

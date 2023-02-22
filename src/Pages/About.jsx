@@ -1,16 +1,14 @@
 import { Box, Image, Text, useColorMode } from "@chakra-ui/react";
-import { useContext } from "react";
-import {ThemeContext} from "../ThemeContext/ThemeContextProvider";
 import "../home.css";
 import gif from "../Images/aboutgif.gif";
 
 
 function About(){
-    const { toggleColorMode, colorMode } = useColorMode();
-    return <Box id="About" bg={colorMode==="dark"? "linear-gradient(180deg, rgba(44,23,75,1) 45%, rgba(28,14,50,1) 99%)" : "#bdb6c9"} color="#ffffff" p="30px 0px" mt="-2px" pt={["50px", "70px", "80px"]}>
+    const { colorMode } = useColorMode();
+    return <Box id="About" bg={colorMode==="light"? "linear-gradient(180deg, rgba(44,23,75,1) 45%, rgba(28,14,50,1) 99%)" : "#bdb6c9"} color="#ffffff" p="30px 0px" mt="-2px" pt={["50px", "70px", "80px"]}>
         <Box w="87%" m="auto">
             <Box display={["inline", "inline", "flex"]} justifyContent="space-between" alignItems="center">
-                <Box w={["90%", "80%", "45%"]} m="auto" color={colorMode==="dark"? "white" : "#13022C"}>
+                <Box w={["90%", "80%", "45%"]} m="auto" color={colorMode==="light"? "white" : "#13022C"}>
                     <Text textAlign="center"  fontWeight="400" mt="20px" fontSize={["2xl", "3xl", "4xl"]}>About Me</Text>
                     <Text fontFamily="calibri" mt="10px" fontSize={["md", "lg", "xl"]}>
                             A passionate full stack web developer having knowledge in Data Structure, Algorithms, and Programming languages.
@@ -22,7 +20,7 @@ function About(){
                 </Box>
                 <Image w={["90%", "90%", "45%"]} m="auto" src={gif} alt="img" />
             </Box>
-            <Box padding="20px 0px" display="flex" justifyContent="space-around" alignItems="center" color={colorMode==="dark"? "white" : "#13022C"}>
+            <Box padding="20px 0px" display="flex" justifyContent="space-around" alignItems="center" color={colorMode==="light"? "white" : "#13022C"}>
                 <Box>
                     <Box className="aboutcircle" rounded="50%" padding={["6px", "8px", "10px"]} bg="url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbpISbEAgaxcUr-mYQDRlSq_91HzaBWMECMQ&usqp=CAU)">
                         <Box className="aboutinner" display="flex" justifyContent="center" alignItems="center" boxSize={["45px", "60px", "80px"]} rounded="50%" bg="url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsvtJvtIPahIGUcO6pJaei-I41Wi7fScoXrA&usqp=CAU)" >
@@ -74,4 +72,4 @@ function About(){
 
 export default About;
 
-// {colorMode==="dark"? "linear-gradient(180deg, rgba(44,23,75,1) 45%, rgba(28,14,50,1) 99%)" : "#bdb6c9"}
+// {colorMode==="light"? "linear-gradient(180deg, rgba(44,23,75,1) 45%, rgba(28,14,50,1) 99%)" : "#bdb6c9"}

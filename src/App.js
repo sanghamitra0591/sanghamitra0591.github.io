@@ -37,7 +37,7 @@ function App() {
     return (
       <div className='App'>
         {/* <div class="svg"> */}
-          <div className="container" style={{bg:colorMode==="dark"? "#13022C" : "#d3cedb"}}>
+          <div className="container" style={{bg:colorMode==="light"? "#13022C" : "#d3cedb"}}>
             <Navbar />
             <Allroutes />
             <About />
@@ -46,9 +46,9 @@ function App() {
             <Stats />
             <Project />
             <Contacts />
-            <Box bg={colorMode==="dark"? "#13022C" : "#d3cedb"}>
-              <Box p="10px 0px" w="95%" m="auto" bg={colorMode==="dark"? "#13022C" : "#d3cedb"}>
-                <Text fontWeight="bold" fontSize={["xs", "sm", "md"]} color={colorMode==="dark"? "white" : "#13022C"} textAlign="center">Designed and developed by Sanghamitra Satpathy, @2022 All rights reserved</Text>
+            <Box bg={colorMode==="light"? "#13022C" : "#d3cedb"}>
+              <Box p="10px 0px" w="95%" m="auto" bg={colorMode==="light"? "#13022C" : "#d3cedb"}>
+                <Text fontWeight="bold" fontSize={["xs", "sm", "md"]} color={colorMode==="light"? "white" : "#13022C"} textAlign="center">Designed and developed by Sanghamitra Satpathy, @2022 All rights reserved</Text>
               </Box>
             </Box>
           </div>

@@ -2,13 +2,10 @@ import { Box, Icon, Tab, TabList, TabPanel, TabPanels, Tabs, Text, useColorMode 
 import { TbBrandJavascript } from 'react-icons/tb';
 import { ImHtmlFive2 } from "react-icons/im";
 import { RiCss3Fill, RiReactjsFill } from "react-icons/ri";
-import { SiChakraui, SiExpress, SiMongodb, SiRedux, SiMaterialui, SiCypress, SiNpm, SiNetlify, SiVisualstudiocode, SiVercel, SiPostman } from "react-icons/si";
+import { SiChakraui, SiExpress, SiMongodb, SiRedux, SiNpm, SiNetlify, SiVisualstudiocode, SiVercel, SiPostman } from "react-icons/si";
 import { FaGitAlt, FaNode } from "react-icons/fa";
 import { AiFillThunderbolt } from "react-icons/ai";
 import "./Page.css";
-import { useContext } from "react";
-import { ThemeContext } from "../ThemeContext/ThemeContextProvider";
-
 
 function Skills(){
 
@@ -201,25 +198,25 @@ function Skills(){
         }
     ]
 
-    const { toggleColorMode, colorMode } = useColorMode();
+    const { colorMode } = useColorMode();
 
-return <Box id="Skills" w="full" bg={colorMode==="dark"? "#13022C" : "#d3cedb"} color="#ffffff" p="30px 0px" mt="-2px" pt={["70px", "100px", "100px"]}>
-        <Box w="85%" m="auto" color={colorMode==="dark"? "white" : "#13022C"}>
+return <Box id="Skills" w="full" bg={colorMode==="light"? "#13022C" : "#d3cedb"} color="#ffffff" p="30px 0px" mt="-2px" pt={["70px", "100px", "100px"]}>
+        <Box w="85%" m="auto" color={colorMode==="light"? "white" : "#13022C"}>
             <Text textAlign="center" mb="15px" fontWeight="400" fontSize={["2xl", "4xl", "5xl"]}>Technical Skills & Tools</Text>
             <Tabs variant='unstyled'>
                 <TabList m="20px auto" w={["80%", "85%", "55%"]} gap="5px" justifyContent="space-between">
-                    <Tab p={["5px", "10px", "10px 15px"]} fontSize={["10px", "15px", "20px"]} bg={colorMode==="dark"?"#4E406F": "#9c8ebe"} _selected={colorMode==="dark"? {color:'#13022c', bg:'#C1B6DB'} : {color:'white', bg:'#423267'}}>All Skills</Tab>
-                    <Tab p={["5px", "10px", "10px 15px"]} fontSize={["10px", "15px", "20px"]} bg={colorMode==="dark"?"#4E406F": "#9c8ebe"} _selected={colorMode==="dark"? {color:'#13022c', bg:'#C1B6DB'} : {color:'white', bg:'#423267'}}>Frontend</Tab>
-                    <Tab p={["5px", "10px", "10px 15px"]} fontSize={["10px", "15px", "20px"]} bg={colorMode==="dark"?"#4E406F": "#9c8ebe"} _selected={colorMode==="dark"? {color:'#13022c', bg:'#C1B6DB'} : {color:'white', bg:'#423267'}}>Backend</Tab>
-                    <Tab p={["5px", "10px", "10px 15px"]} fontSize={["10px", "15px", "20px"]} bg={colorMode==="dark"?"#4E406F": "#9c8ebe"} _selected={colorMode==="dark"? {color:'#13022c', bg:'#C1B6DB'} : {color:'white', bg:'#423267'}}>Tools</Tab>
+                    <Tab p={["5px", "10px", "10px 15px"]} fontSize={["10px", "15px", "20px"]} bg={colorMode==="light"?"#4E406F": "#9c8ebe"} _selected={colorMode==="light"? {color:'#13022c', bg:'#C1B6DB'} : {color:'white', bg:'#423267'}}>All Skills</Tab>
+                    <Tab p={["5px", "10px", "10px 15px"]} fontSize={["10px", "15px", "20px"]} bg={colorMode==="light"?"#4E406F": "#9c8ebe"} _selected={colorMode==="light"? {color:'#13022c', bg:'#C1B6DB'} : {color:'white', bg:'#423267'}}>Frontend</Tab>
+                    <Tab p={["5px", "10px", "10px 15px"]} fontSize={["10px", "15px", "20px"]} bg={colorMode==="light"?"#4E406F": "#9c8ebe"} _selected={colorMode==="light"? {color:'#13022c', bg:'#C1B6DB'} : {color:'white', bg:'#423267'}}>Backend</Tab>
+                    <Tab p={["5px", "10px", "10px 15px"]} fontSize={["10px", "15px", "20px"]} bg={colorMode==="light"?"#4E406F": "#9c8ebe"} _selected={colorMode==="light"? {color:'#13022c', bg:'#C1B6DB'} : {color:'white', bg:'#423267'}}>Tools</Tab>
                 </TabList>
                 <TabPanels>
                     <TabPanel>
                         <Box display="grid" gap={["20px", "30px", "40px"]} gridTemplateColumns={["repeat(2, 1fr)", "repeat(3, 1fr)", "repeat(4, 1fr)"]} textAlign="center">
                             {allskills && allskills.map((el)=>{
-                                return <Box key={el.id} className={colorMode==="dark"?"skillouter":"skillouterlight"} p={["10px", "15px", "17px"]} h={["120px", "160px", "180px"]}>
-                                            <Box className={colorMode==="dark"?"skillinner":"skillinnerlight"} p={["5px", "7px", "15px"]} >
-                                                <Icon as={el.iconas} w={["30px", "35px", "50px"]} h="50px" color={colorMode==="dark"? "white" : "#13022C"} />
+                                return <Box key={el.id} className={colorMode==="light"?"skillouter":"skillouterlight"} p={["10px", "15px", "17px"]} h={["120px", "160px", "180px"]}>
+                                            <Box className={colorMode==="light"?"skillinner":"skillinnerlight"} p={["5px", "7px", "15px"]} >
+                                                <Icon as={el.iconas} w={["30px", "35px", "50px"]} h="50px" color={colorMode==="light"? "white" : "#13022C"} />
                                                 <Text fontSize={["10px", "15px", "20px"]} mt="10px">{el.text}</Text>
                                             </Box>
                                         </Box>
@@ -229,9 +226,9 @@ return <Box id="Skills" w="full" bg={colorMode==="dark"? "#13022C" : "#d3cedb"} 
                     <TabPanel>
                         <Box display="grid" gap={["20px", "30px", "40px"]} gridTemplateColumns={["repeat(2, 1fr)", "repeat(3, 1fr)", "repeat(4, 1fr)"]} textAlign="center">
                             {frontend && frontend.map((el)=>{
-                                return <Box key={el.id} className={colorMode==="dark"?"skillouter":"skillouterlight"} p={["10px", "15px", "17px"]} h={["120px", "160px", "180px"]}>
-                                            <Box className={colorMode==="dark"?"skillinner":"skillinnerlight"} p={["5px", "7px", "15px"]}>
-                                                <Icon as={el.iconas} w={["30px", "35px", "50px"]} h="50px" color={colorMode==="dark"? "white" : "#13022C"} />
+                                return <Box key={el.id} className={colorMode==="light"?"skillouter":"skillouterlight"} p={["10px", "15px", "17px"]} h={["120px", "160px", "180px"]}>
+                                            <Box className={colorMode==="light"?"skillinner":"skillinnerlight"} p={["5px", "7px", "15px"]}>
+                                                <Icon as={el.iconas} w={["30px", "35px", "50px"]} h="50px" color={colorMode==="light"? "white" : "#13022C"} />
                                                 <Text fontSize={["10px", "15px", "20px"]} mt="10px">{el.text}</Text>
                                             </Box>
                                         </Box>
@@ -241,9 +238,9 @@ return <Box id="Skills" w="full" bg={colorMode==="dark"? "#13022C" : "#d3cedb"} 
                     <TabPanel>
                         <Box display="grid" gap={["20px", "30px", "40px"]} gridTemplateColumns={["repeat(2, 1fr)", "repeat(3, 1fr)", "repeat(4, 1fr)"]} textAlign="center">
                             {backend && backend.map((el)=>{
-                                return <Box key={el.id} className={colorMode==="dark"?"skillouter":"skillouterlight"} p={["10px", "15px", "17px"]} h={["120px", "160px", "180px"]}>
-                                            <Box className={colorMode==="dark"?"skillinner":"skillinnerlight"} p={["5px", "7px", "15px"]}>
-                                                <Icon as={el.iconas} w={["30px", "35px", "50px"]} h="50px" color={colorMode==="dark"? "white" : "#13022C"} />
+                                return <Box key={el.id} className={colorMode==="light"?"skillouter":"skillouterlight"} p={["10px", "15px", "17px"]} h={["120px", "160px", "180px"]}>
+                                            <Box className={colorMode==="light"?"skillinner":"skillinnerlight"} p={["5px", "7px", "15px"]}>
+                                                <Icon as={el.iconas} w={["30px", "35px", "50px"]} h="50px" color={colorMode==="light"? "white" : "#13022C"} />
                                                 <Text fontSize={["10px", "15px", "20px"]} mt="10px">{el.text}</Text>
                                             </Box>
                                         </Box>
@@ -253,9 +250,9 @@ return <Box id="Skills" w="full" bg={colorMode==="dark"? "#13022C" : "#d3cedb"} 
                     <TabPanel>
                         <Box display="grid" gap={["20px", "30px", "40px"]} gridTemplateColumns={["repeat(2, 1fr)", "repeat(3, 1fr)", "repeat(4, 1fr)"]} textAlign="center">
                             {tools && tools.map((el)=>{
-                                return <Box key={el.id} className={colorMode==="dark"?"skillouter":"skillouterlight"} p={["10px", "15px", "17px"]} h={["120px", "160px", "180px"]}>
-                                            <Box className={colorMode==="dark"?"skillinner":"skillinnerlight"} p={["5px", "7px", "15px"]}>
-                                                <Icon as={el.iconas} w={["30px", "35px", "50px"]} h="50px" color={colorMode==="dark"? "white" : "#13022C"} />
+                                return <Box key={el.id} className={colorMode==="light"?"skillouter":"skillouterlight"} p={["10px", "15px", "17px"]} h={["120px", "160px", "180px"]}>
+                                            <Box className={colorMode==="light"?"skillinner":"skillinnerlight"} p={["5px", "7px", "15px"]}>
+                                                <Icon as={el.iconas} w={["30px", "35px", "50px"]} h="50px" color={colorMode==="light"? "white" : "#13022C"} />
                                                 <Text fontSize={["10px", "15px", "20px"]} mt="10px">{el.text}</Text>
                                             </Box>
                                         </Box>
@@ -270,4 +267,4 @@ return <Box id="Skills" w="full" bg={colorMode==="dark"? "#13022C" : "#d3cedb"} 
 
 export default Skills;
 
-//_selected={colorMode==="dark"?  {{ color: '#13022c', bg: '#C1B6DB' }}  : {{ color: 'white', bg: '#665492' }}}
+//_selected={colorMode==="light"?  {{ color: '#13022c', bg: '#C1B6DB' }}  : {{ color: 'white', bg: '#665492' }}}
