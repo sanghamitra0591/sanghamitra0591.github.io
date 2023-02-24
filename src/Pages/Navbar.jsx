@@ -5,7 +5,7 @@ import AnchorLink from "react-anchor-link-smooth-scroll";
 import { CloseIcon, HamburgerIcon } from "@chakra-ui/icons";
 import { FaMoon, FaSun } from "react-icons/fa";
 import "../home.css";
-import resume from "../Images/Sanghamitra_Satpathy_Resume.pdf";
+import resume from "../Images/Sanghamitra-Satpathy-Resume.pdf";
 
 
 function Navbar(){

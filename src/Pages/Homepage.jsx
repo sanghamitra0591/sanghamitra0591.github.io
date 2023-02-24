@@ -3,7 +3,7 @@ import { Box, Button, Image, Text, useColorMode } from "@chakra-ui/react";
 import Typewriter from "typewriter-effect";
 import {  AiOutlineGithub, AiOutlineLinkedin} from "react-icons/ai";
 import mypic from "../Images/mypic.jpg";
-import resume from "../Images/Sanghamitra_Satpathy_Resume.pdf";
+import resume from "../Images/Sanghamitra-Satpathy-Resume.pdf";
 
 
 function Homepage(){
