@@ -26,8 +26,8 @@ function Project(){
             type: "Group",
             desc: "A Health, Nutritional website, where user can login, signup, visit various product pages, filter and sort according to their needs ans place order.",
             techstack: "React, Chakra UI, JavaScript, CSS, Bootstrap, Node.js, Express, MongoDB",
-            livelink: "https://healthkart-clone-git-master-vivekjawale.vercel.app/",
-            gitlink: "https://github.com/sanghamitra0591/low-head-7683/tree/main/tripadvisor"
+            livelink: "https://healthkart-clone-ruddy.vercel.app/",
+            gitlink: "https://github.com/VivekJawale/healthkart-clone"
         },
         {
             id: 2,
@@ -97,7 +97,7 @@ function Project(){
             desc: "A travel website, where user can login, signup, plan their trips, book flight, book hotels, wishlist the trips, view nearby restaurants, search by location etc.",
             techstack: "React, Chakra UI, JavaScript, CSS",
             livelink: "https://tripadvisor-clone1.vercel.app/",
-            gitlink: "https://github.com/sanghamitra0591/low-head-7683/tree/main/tripadvisor"
+            gitlink: "https://github.com/sanghamitra0591/trip-advisor-clone/"
         },
         {
             id: 9,
