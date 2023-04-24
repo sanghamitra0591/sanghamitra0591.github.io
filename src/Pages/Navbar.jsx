@@ -77,7 +77,7 @@ function Navbar(){
             <AnchorLink className="nav-link skills" href='#Skills' onClick={()=> changeDisplay('none')} ><Text _hover={{fontSize:"4xl"}} > Skills</Text></AnchorLink>
             <AnchorLink claclassNamess="nav-link projects" href='#Project' onClick={()=> changeDisplay('none')} ><Text _hover={{fontSize:"4xl"}} > Projects</Text></AnchorLink>
             <AnchorLink className="nav-link contact" href='#Contactt' onClick={()=> changeDisplay('none')} ><Text _hover={{fontSize:"4xl"}} > Contact</Text></AnchorLink>
-            <Text onClick={()=>window.open("https://drive.google.com/file/d/1Fv170bSSoWS-7ylXN6Axq7hsX1OHh6O_/view?usp=share_link", "_blank")} _hover={{textDecoration:"none", fontSize:"4xl"}} ><a href={resume} download rel="noreferrer"> Resume</a></Text>
+            <Text className="nav-link resume" onClick={()=>window.open("https://drive.google.com/file/d/1Fv170bSSoWS-7ylXN6Axq7hsX1OHh6O_/view?usp=share_link", "_blank")} _hover={{textDecoration:"none", fontSize:"4xl"}} ><a href={resume} download rel="noreferrer"> Resume</a></Text>
             <Box textAlign="center">
                 <IconButton
                     aria-label="toggle theme"

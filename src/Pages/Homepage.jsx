@@ -13,10 +13,10 @@ function Homepage(){
                 <Box h="570px" w="85%" color={colorMode==="light"? "#d3cedb" : "#13022C"} m="auto" display={["inline", "inline", "flex"]} alignItems="center" justifyContent="space-around" pb="60px">
                     <Box mt={["50px", "50px", "0px"]} w={["100%", "100%", "60%"]}>
                         <Box textAlign="left" pl={["20px", "60px", "20px"]}>
-                            <Text fontWeight="500" fontFamily="sans-serif" display="flex" alignItems="center" fontSize={["2xl", "3xl", "4xl"]}>Hi👋, my name is</Text>
+                            <Text  id="user-detail-intro" fontWeight="500" fontFamily="sans-serif" display="flex" alignItems="center" fontSize={["2xl", "3xl", "4xl"]}>Hi👋, my name is</Text>
                             <Text id="user-detail-name" fontFamily="cursive" fontSize={["2xl", "4xl", "5xl"]}>Sanghamitra Satpathy</Text>
                             <Box id="user-detail-intro" fontFamily="sans-serif" fontSize={["20px", "3xl", "3xl"]} display="flex" gap={["5px","7px", "8px"]}>I'm a 
-                                <Typewriter
+                                <Typewriter  id="user-detail-intro"
                                     options={{
                                         strings: [
                                         " Full Stack Web Developer.",
