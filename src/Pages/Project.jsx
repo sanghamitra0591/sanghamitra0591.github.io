@@ -116,8 +116,8 @@ function Project(){
             <Text mb="25px" color={colorMode==="light"? "white" : "#13022C"} textAlign="center" fontWeight="400" fontSize={["3xl", "4xl", "5xl"]}>Projects</Text>
             <Box display="grid" gap="30px" gridTemplateColumns={["repeat(1, 1fr)", "repeat(2, 1fr)", "repeat(3, 1fr)"]}>
                 {projectdata && projectdata.map((project)=> {
-                    return <Box key={project.id} className={[colorMode==="light"?"projectouter": "projectouterlight", "project-card"]}>
-                                <Box>
+                    return <Box key={project.id} className={"project-card"}>
+                                <Box className={colorMode==="light"?"projectouter": "projectouterlight"}>
                                     <Image w="100%" src={project.img} alt="project-thumbnail" />
                                     <Box w="100%">
                                         <Text className="project-title" fontSize={["xl", "2xl", "2xl"]}>{project.name}</Text>

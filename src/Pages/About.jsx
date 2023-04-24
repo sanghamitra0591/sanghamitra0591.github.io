@@ -10,7 +10,7 @@ function About(){
             <Box display={["inline", "inline", "flex"]} justifyContent="space-between" alignItems="center">
                 <Box w={["90%", "80%", "45%"]} m="auto" color={colorMode==="light"? "white" : "#13022C"}>
                     <Text textAlign="center"  fontWeight="400" mt="20px" fontSize={["2xl", "3xl", "4xl"]}>About Me</Text>
-                    <Text fontFamily="calibri" mt="10px" fontSize={["md", "lg", "xl"]}>
+                    <Text id="user-detail-intro" fontFamily="calibri" mt="10px" fontSize={["md", "lg", "xl"]}>
                             A passionate full stack web developer having knowledge in Data Structure, Algorithms, and Programming languages.
                             Using HTML, CSS, JavaScript, React, Redux, Chakra UI and MongoDB I have made some solo and 
                             collaborative projects and continue

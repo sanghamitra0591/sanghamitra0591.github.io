@@ -54,7 +54,7 @@ function Navbar(){
                 <Link className="nav-link contact" display="flex">
                     <AnchorLink className="nav-link contact" href='#Contactt'><Text color={colorMode==="light"? "white" : "#1a0933"} fontWeight="500" fontSize={['sm', 'sm', 'lg']}>Contact</Text></AnchorLink>
                 </Link>
-                <Text id="resume-button-1" onClick={()=>window.open("https://drive.google.com/file/d/1Fv170bSSoWS-7ylXN6Axq7hsX1OHh6O_/view?usp=share_link", "_blank")} color={colorMode==="light"? "white" : "#1a0933"} fontWeight="500" fontSize={['sm', 'sm', 'lg']}><a href={resume} download >Resume</a></Text>
+                <Text className="nav-link resume" id="resume-button-1" onClick={()=>window.open("https://drive.google.com/file/d/1Fv170bSSoWS-7ylXN6Axq7hsX1OHh6O_/view?usp=share_link", "_blank")} color={colorMode==="light"? "white" : "#1a0933"} fontWeight="500" fontSize={['sm', 'sm', 'lg']}><a href={resume} download >Resume</a></Text>
                 <IconButton
                     aria-label="toggle theme"
                     rounded="full"
