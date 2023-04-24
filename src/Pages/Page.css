@@ -78,7 +78,7 @@
     transition-duration: 3.5s;
 }
 
-.contact{
+.contactt{
     border: 3.5px solid rgba(200, 137, 230, 0.637);
     padding: 20px;
     box-shadow: 4px 5px 4px 3px rgba(89, 4, 168, 0.137);
@@ -94,7 +94,7 @@
     background: rgb(133,131,156);
     background: linear-gradient(120deg, rgba(133,131,156,1) 2%, rgba(207,204,226,1) 53%, rgba(140,138,152,1) 94%);
 }
-.contact:hover{
+.contactt:hover{
     border: 3.5px solid rgba(200, 137, 230, 0.637);
     background: #2b273b;
     background-image: linear-gradient( 359.4deg,  rgba(12,20,69,1) -16.9%, rgba(71,30,84,1) 119.9% );

@@ -200,8 +200,8 @@ function Skills(){
 
     const { colorMode } = useColorMode();
 
-return <Box id="Skills" w="full" bg={colorMode==="light"? "#13022C" : "#d3cedb"} color="#ffffff" p="30px 0px" mt="-2px" pt={["70px", "100px", "100px"]}>
-        <Box w="85%" m="auto" color={colorMode==="light"? "white" : "#13022C"}>
+return <Box id="skills" w="full" bg={colorMode==="light"? "#13022C" : "#d3cedb"} color="#ffffff" p="30px 0px" mt="-2px" pt={["70px", "100px", "100px"]}>
+        <Box id="Skills" w="85%" m="auto" color={colorMode==="light"? "white" : "#13022C"}>
             <Text textAlign="center" mb="15px" fontWeight="400" fontSize={["2xl", "4xl", "5xl"]}>Technical Skills & Tools</Text>
             <Tabs variant='unstyled'>
                 <TabList m="20px auto" w={["80%", "85%", "55%"]} gap="5px" justifyContent="space-between">
@@ -214,10 +214,10 @@ return <Box id="Skills" w="full" bg={colorMode==="light"? "#13022C" : "#d3cedb"}
                     <TabPanel>
                         <Box display="grid" gap={["20px", "30px", "40px"]} gridTemplateColumns={["repeat(2, 1fr)", "repeat(3, 1fr)", "repeat(4, 1fr)"]} textAlign="center">
                             {allskills && allskills.map((el)=>{
-                                return <Box key={el.id} className={colorMode==="light"?"skillouter":"skillouterlight"} p={["10px", "15px", "17px"]} h={["120px", "160px", "180px"]}>
+                                return <Box class="skills-card" key={el.id} className={colorMode==="light"?"skillouter":"skillouterlight"} p={["10px", "15px", "17px"]} h={["120px", "160px", "180px"]}>
                                             <Box className={colorMode==="light"?"skillinner":"skillinnerlight"} p={["5px", "7px", "15px"]} >
-                                                <Icon as={el.iconas} w={["30px", "35px", "50px"]} h="50px" color={colorMode==="light"? "white" : "#13022C"} />
-                                                <Text fontSize={["10px", "15px", "20px"]} mt="10px">{el.text}</Text>
+                                                <Icon className="skills-card-img" as={el.iconas} w={["30px", "35px", "50px"]} h="50px" color={colorMode==="light"? "white" : "#13022C"} />
+                                                <Text className="skills-card-name" fontSize={["10px", "15px", "20px"]} mt="10px">{el.text}</Text>
                                             </Box>
                                         </Box>
                             })}
@@ -226,10 +226,10 @@ return <Box id="Skills" w="full" bg={colorMode==="light"? "#13022C" : "#d3cedb"}
                     <TabPanel>
                         <Box display="grid" gap={["20px", "30px", "40px"]} gridTemplateColumns={["repeat(2, 1fr)", "repeat(3, 1fr)", "repeat(4, 1fr)"]} textAlign="center">
                             {frontend && frontend.map((el)=>{
-                                return <Box key={el.id} className={colorMode==="light"?"skillouter":"skillouterlight"} p={["10px", "15px", "17px"]} h={["120px", "160px", "180px"]}>
+                                return <Box class="skills-card" key={el.id} className={colorMode==="light"?"skillouter":"skillouterlight"} p={["10px", "15px", "17px"]} h={["120px", "160px", "180px"]}>
                                             <Box className={colorMode==="light"?"skillinner":"skillinnerlight"} p={["5px", "7px", "15px"]}>
-                                                <Icon as={el.iconas} w={["30px", "35px", "50px"]} h="50px" color={colorMode==="light"? "white" : "#13022C"} />
-                                                <Text fontSize={["10px", "15px", "20px"]} mt="10px">{el.text}</Text>
+                                                <Icon className="skills-card-img" as={el.iconas} w={["30px", "35px", "50px"]} h="50px" color={colorMode==="light"? "white" : "#13022C"} />
+                                                <Text className="skills-card-name" fontSize={["10px", "15px", "20px"]} mt="10px">{el.text}</Text>
                                             </Box>
                                         </Box>
                             })}
@@ -238,10 +238,10 @@ return <Box id="Skills" w="full" bg={colorMode==="light"? "#13022C" : "#d3cedb"}
                     <TabPanel>
                         <Box display="grid" gap={["20px", "30px", "40px"]} gridTemplateColumns={["repeat(2, 1fr)", "repeat(3, 1fr)", "repeat(4, 1fr)"]} textAlign="center">
                             {backend && backend.map((el)=>{
-                                return <Box key={el.id} className={colorMode==="light"?"skillouter":"skillouterlight"} p={["10px", "15px", "17px"]} h={["120px", "160px", "180px"]}>
+                                return <Box class="skills-card" key={el.id} className={colorMode==="light"?"skillouter":"skillouterlight"} p={["10px", "15px", "17px"]} h={["120px", "160px", "180px"]}>
                                             <Box className={colorMode==="light"?"skillinner":"skillinnerlight"} p={["5px", "7px", "15px"]}>
-                                                <Icon as={el.iconas} w={["30px", "35px", "50px"]} h="50px" color={colorMode==="light"? "white" : "#13022C"} />
-                                                <Text fontSize={["10px", "15px", "20px"]} mt="10px">{el.text}</Text>
+                                                <Icon className="skills-card-img" as={el.iconas} w={["30px", "35px", "50px"]} h="50px" color={colorMode==="light"? "white" : "#13022C"} />
+                                                <Text className="skills-card-name" fontSize={["10px", "15px", "20px"]} mt="10px">{el.text}</Text>
                                             </Box>
                                         </Box>
                             })}
@@ -250,10 +250,10 @@ return <Box id="Skills" w="full" bg={colorMode==="light"? "#13022C" : "#d3cedb"}
                     <TabPanel>
                         <Box display="grid" gap={["20px", "30px", "40px"]} gridTemplateColumns={["repeat(2, 1fr)", "repeat(3, 1fr)", "repeat(4, 1fr)"]} textAlign="center">
                             {tools && tools.map((el)=>{
-                                return <Box key={el.id} className={colorMode==="light"?"skillouter":"skillouterlight"} p={["10px", "15px", "17px"]} h={["120px", "160px", "180px"]}>
+                                return <Box class="skills-card" key={el.id} className={colorMode==="light"?"skillouter":"skillouterlight"} p={["10px", "15px", "17px"]} h={["120px", "160px", "180px"]}>
                                             <Box className={colorMode==="light"?"skillinner":"skillinnerlight"} p={["5px", "7px", "15px"]}>
-                                                <Icon as={el.iconas} w={["30px", "35px", "50px"]} h="50px" color={colorMode==="light"? "white" : "#13022C"} />
-                                                <Text fontSize={["10px", "15px", "20px"]} mt="10px">{el.text}</Text>
+                                                <Icon className="skills-card-img" as={el.iconas} w={["30px", "35px", "50px"]} h="50px" color={colorMode==="light"? "white" : "#13022C"} />
+                                                <Text className="skills-card-name" fontSize={["10px", "15px", "20px"]} mt="10px">{el.text}</Text>
                                             </Box>
                                         </Box>
                             })}

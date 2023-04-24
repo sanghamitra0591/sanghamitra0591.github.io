@@ -111,24 +111,24 @@ function Project(){
         }
     ]
 
-    return <Box id="Project" w="full" bg={colorMode==="light"? "#13022C" : "#d3cedb"} color={colorMode==="light"? "#d3cedb" : "#13022C"} p="30px 0px" textAlign="center" pt={["40px", "60px", "80px"]}>
-        <Box w="85%" m="auto">
+    return <Box id="projects" w="full" bg={colorMode==="light"? "#13022C" : "#d3cedb"} color={colorMode==="light"? "#d3cedb" : "#13022C"} p="30px 0px" textAlign="center" pt={["40px", "60px", "80px"]}>
+        <Box id="Project" w="85%" m="auto">
             <Text mb="25px" color={colorMode==="light"? "white" : "#13022C"} textAlign="center" fontWeight="400" fontSize={["3xl", "4xl", "5xl"]}>Projects</Text>
             <Box display="grid" gap="30px" gridTemplateColumns={["repeat(1, 1fr)", "repeat(2, 1fr)", "repeat(3, 1fr)"]}>
                 {projectdata && projectdata.map((project)=> {
-                    return <Box key={project.id} className={colorMode==="light"?"projectouter": "projectouterlight"}>
+                    return <Box class="project-card" key={project.id} className={colorMode==="light"?"projectouter": "projectouterlight"}>
                                 <Box>
                                     <Image w="100%" src={project.img} alt="project-thumbnail" />
                                     <Box w="100%">
-                                        <Text fontSize={["xl", "2xl", "2xl"]}>{project.name}</Text>
+                                        <Text className="project-title" fontSize={["xl", "2xl", "2xl"]}>{project.name}</Text>
                                         <Text fontSize={["lg", "xl", "xl"]}>( {project.type} )</Text>
-                                        <Text fontSize={["xs", "sm", "md"]}>{project.desc}</Text>
-                                        <Text fontSize={["sm", "md", "lg"]} fontWeight="bold">Techstacks :-{project.techstack}</Text>
+                                        <Text  className="project-description" fontSize={["xs", "sm", "md"]}>{project.desc}</Text>
+                                        <Text  className="project-tech-stack"fontSize={["sm", "md", "lg"]} fontWeight="bold">Techstacks :-{project.techstack}</Text>
                                         <Box display="flex" w={["100%", "100%", "100%"]} m="auto" justifyContent="space-around">
                                             {/* <Button  _hover={{bg:"#4E406F", color:"#ffffff"}} mt="10px" p={["5px 5px", "10px 10px", "10px 10px"]} fontSize={["md", "lg", ";g"]} bg="#C1B6DB" color="#13022c" border="none" variant='solid' leftIcon={<BiLinkExternal />}><a href={project.livelink} rel="noreferrer" target="_blank">Live</a></Button>
                                             <Button _hover={{bg:"#4E406F", color:"#ffffff"}} mt="10px" p={["5px 5px", "10px 10px", "10px 10px"]} fontSize={["md", "lg", "lg"]} bg="#C1B6DB" color="#13022c" border="none" variant='solid' leftIcon={<BsGithub />}><a href={project.gitlink} rel="noreferrer" target="_blank">Github</a></Button> */}
-                                            <Button as='a' target='_blank' href={project.livelink} _hover={{bg:"#4E406F", color:"#ffffff"}} mt="10px" p={["5px 5px", "5px 5px", "10px 10px"]} fontSize={["sm", "sm", "md"]} bg={colorMode==="light"? "#C1B6DB" : "#251942"} color={colorMode==="light"? "#13022c" : "white"} border="none" variant='solid' leftIcon={<BiLinkExternal />}>Live</Button>
-                                            <Button as='a' target='_blank' href={project.gitlink} _hover={{bg:"#4E406F", color:"#ffffff"}} mt="10px" p={["5px 5px", "5px 5px", "10px 10px"]} fontSize={["sm", "sm", "md"]} bg={colorMode==="light"? "#C1B6DB" : "#251942"} color={colorMode==="light"? "#13022c" : "white"} border="none" variant='solid' leftIcon={<BsGithub />}>Github</Button>
+                                            <Button className="project-deployed-link" as='a' target='_blank' href={project.livelink} _hover={{bg:"#4E406F", color:"#ffffff"}} mt="10px" p={["5px 5px", "5px 5px", "10px 10px"]} fontSize={["sm", "sm", "md"]} bg={colorMode==="light"? "#C1B6DB" : "#251942"} color={colorMode==="light"? "#13022c" : "white"} border="none" variant='solid' leftIcon={<BiLinkExternal />}>Live</Button>
+                                            <Button className="project-github-link" as='a' target='_blank' href={project.gitlink} _hover={{bg:"#4E406F", color:"#ffffff"}} mt="10px" p={["5px 5px", "5px 5px", "10px 10px"]} fontSize={["sm", "sm", "md"]} bg={colorMode==="light"? "#C1B6DB" : "#251942"} color={colorMode==="light"? "#13022c" : "white"} border="none" variant='solid' leftIcon={<BsGithub />}>Github</Button>
                                         </Box>
                                     </Box>
                                 </Box>

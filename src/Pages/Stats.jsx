@@ -11,6 +11,7 @@ const Stats = () => {
       <Box w={["80%", "80%", "60%"]} m="auto">
         <Link href="https://github.com/sanghamitra0591">
           <Image
+            id="github-streak-stats"
             align="left"
             alt="img"
             h="200px"
@@ -24,6 +25,7 @@ const Stats = () => {
       <Box w={["80%", "62%", "60%"]} display= "flex" m="auto" mt={["", "10px", "0px"]} gap="10px">
         <Link href="https://github.com/sanghamitra0591">  
           <Image
+            id="github-top-langs"
             align="center" h={["", "120px", "300px"]}
             alt="img"
             src={colorMode==="light"?
@@ -33,6 +35,7 @@ const Stats = () => {
         </Link>
         <Link href="https://github.com/sanghamitra0591">
           <Image
+            id="github-stats-card"
             align="left" h={["", "120px", "300px"]}
             alt="img"
             src={colorMode==="light"?
