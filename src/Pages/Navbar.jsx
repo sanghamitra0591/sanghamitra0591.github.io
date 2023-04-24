@@ -52,7 +52,7 @@ function Navbar(){
                     <AnchorLink href='#Project'><Text color={colorMode==="light"? "white" : "#1a0933"} fontWeight="500" _active={{textDecoration:"underlined"}} fontSize={['sm', 'sm', 'lg']}>Project</Text></AnchorLink>
                 </Link>
                 <Link className="nav-link contact" display="flex">
-                    <AnchorLink href='#Contact'><Text color={colorMode==="light"? "white" : "#1a0933"} fontWeight="500" fontSize={['sm', 'sm', 'lg']}>Contact</Text></AnchorLink>
+                    <AnchorLink href='#Contactt'><Text color={colorMode==="light"? "white" : "#1a0933"} fontWeight="500" fontSize={['sm', 'sm', 'lg']}>Contact</Text></AnchorLink>
                 </Link>
                 <Text id="resume-button-1" onClick={()=>window.open("https://drive.google.com/file/d/1Fv170bSSoWS-7ylXN6Axq7hsX1OHh6O_/view?usp=share_link", "_blank")} color={colorMode==="light"? "white" : "#1a0933"} fontWeight="500" fontSize={['sm', 'sm', 'lg']}><a href={resume} download >Resume</a></Text>
                 <IconButton
@@ -76,7 +76,7 @@ function Navbar(){
             <AnchorLink href='#About' onClick={()=> changeDisplay('none')} ><Text _hover={{fontSize:"4xl"}} > About</Text></AnchorLink>
             <AnchorLink href='#Skills' onClick={()=> changeDisplay('none')} ><Text _hover={{fontSize:"4xl"}} > Skills</Text></AnchorLink>
             <AnchorLink href='#Project' onClick={()=> changeDisplay('none')} ><Text _hover={{fontSize:"4xl"}} > Projects</Text></AnchorLink>
-            <AnchorLink href='#Contact' onClick={()=> changeDisplay('none')} ><Text _hover={{fontSize:"4xl"}} > Contact</Text></AnchorLink>
+            <AnchorLink href='#Contactt' onClick={()=> changeDisplay('none')} ><Text _hover={{fontSize:"4xl"}} > Contact</Text></AnchorLink>
             <Text onClick={()=>window.open("https://drive.google.com/file/d/1Fv170bSSoWS-7ylXN6Axq7hsX1OHh6O_/view?usp=share_link", "_blank")} _hover={{textDecoration:"none", fontSize:"4xl"}} ><a href={resume} download rel="noreferrer"> Resume</a></Text>
             <Box textAlign="center">
                 <IconButton
