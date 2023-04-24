@@ -72,11 +72,11 @@ function Navbar(){
        <Flex w="100%" h="100%" color="white" bg={isscroll?colorMode==="light"? "#13022c" : "#ad99ad" : colorMode==="light"? "#13022C" : "#c9c7c9"} zIndex={20} pos="fixed" top="0" left="0" overflowY="auto" flexDir="column" display={display} >
        <Flex justify="flex-end"><IconButton mt={2} mr={2} aria-label="Close Menu" size="lg" bg="none" color={colorMode==="light"? "white" : "#1a0933"} icon={<CloseIcon/>} onClick={()=> changeDisplay('none')} /></Flex>
         <Box display="flex" gap="30px" flexDir="column" align="center" fontSize="2xl" color={colorMode==="light"? "white" : "#1a0933"} >
-            <AnchorLink className="nav-link home" href='#Home' onClick={()=> changeDisplay('none')}  ><Text _hover={{fontSize:"4xl"}} > Home</Text></AnchorLink>
-            <AnchorLink className="nav-link about" href='#About' onClick={()=> changeDisplay('none')} ><Text _hover={{fontSize:"4xl"}} > About</Text></AnchorLink>
-            <AnchorLink className="nav-link skills" href='#Skills' onClick={()=> changeDisplay('none')} ><Text _hover={{fontSize:"4xl"}} > Skills</Text></AnchorLink>
-            <AnchorLink claclassNamess="nav-link projects" href='#Project' onClick={()=> changeDisplay('none')} ><Text _hover={{fontSize:"4xl"}} > Projects</Text></AnchorLink>
-            <AnchorLink className="nav-link contact" href='#Contactt' onClick={()=> changeDisplay('none')} ><Text _hover={{fontSize:"4xl"}} > Contact</Text></AnchorLink>
+            <AnchorLink href='#Home' onClick={()=> changeDisplay('none')}  ><Text _hover={{fontSize:"4xl"}} > Home</Text></AnchorLink>
+            <AnchorLink href='#About' onClick={()=> changeDisplay('none')} ><Text _hover={{fontSize:"4xl"}} > About</Text></AnchorLink>
+            <AnchorLink href='#Skills' onClick={()=> changeDisplay('none')} ><Text _hover={{fontSize:"4xl"}} > Skills</Text></AnchorLink>
+            <AnchorLink href='#Project' onClick={()=> changeDisplay('none')} ><Text _hover={{fontSize:"4xl"}} > Projects</Text></AnchorLink>
+            <AnchorLink href='#Contactt' onClick={()=> changeDisplay('none')} ><Text _hover={{fontSize:"4xl"}} > Contact</Text></AnchorLink>
             <Text className="nav-link resume" onClick={()=>window.open("https://drive.google.com/file/d/1Fv170bSSoWS-7ylXN6Axq7hsX1OHh6O_/view?usp=share_link", "_blank")} _hover={{textDecoration:"none", fontSize:"4xl"}} ><a href={resume} download rel="noreferrer"> Resume</a></Text>
             <Box textAlign="center">
                 <IconButton
