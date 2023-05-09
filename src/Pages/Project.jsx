@@ -18,6 +18,7 @@ function Project(){
     
     const { colorMode } = useColorMode();
 
+    
     let projectdata= [
         {
             id: 1,
