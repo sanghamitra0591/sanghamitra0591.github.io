@@ -62,13 +62,13 @@ function Project(){
         },
         {
             id: 5,
-            name: "Slideshow Maker",
-            img: albummaker,
+            name: "Trip Advisor Clone",
+            img: tripadvisor,
             type: "Individual",
-            techstack: "HTML, CSS, JavaScript",
-            desc: "An Album maker app where user can add photos and make slideshow using those, find random photos by clicking on Game mode",
-            livelink: "https://slideshow-maker.vercel.app/",
-            gitlink: "https://github.com/sanghamitra0591/exploring/tree/main/album-maker"
+            desc: "A travel website, where user can login, signup, plan their trips, book flight, book hotels, wishlist the trips, view nearby restaurants, search by location etc.",
+            techstack: "React, Chakra UI, JavaScript, CSS",
+            livelink: "https://tripadvisor-clone1.vercel.app/",
+            gitlink: "https://github.com/sanghamitra0591/trip-advisor-clone/"
         },
         {
             id: 6,
@@ -92,13 +92,13 @@ function Project(){
         },
         {
             id: 8,
-            name: "Trip Advisor Clone",
-            img: tripadvisor,
+            name: "Slideshow Maker",
+            img: albummaker,
             type: "Individual",
-            desc: "A travel website, where user can login, signup, plan their trips, book flight, book hotels, wishlist the trips, view nearby restaurants, search by location etc.",
-            techstack: "React, Chakra UI, JavaScript, CSS",
-            livelink: "https://tripadvisor-clone1.vercel.app/",
-            gitlink: "https://github.com/sanghamitra0591/trip-advisor-clone/"
+            techstack: "HTML, CSS, JavaScript",
+            desc: "An Album maker app where user can add photos and make slideshow using those, find random photos by clicking on Game mode",
+            livelink: "https://slideshow-maker.vercel.app/",
+            gitlink: "https://github.com/sanghamitra0591/exploring/tree/main/album-maker"
         },
         {
             id: 9,
