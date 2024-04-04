@@ -32,7 +32,7 @@ function Navbar(){
 
 
 
-    return <Box id="nav-menu" zIndex={1} bg={isscroll? colorMode==="light"? "#2c2244" : "#a298b3" : colorMode==="light"? "#13022C" : "#d2c6d2"} w="100%" p="10px 0px" boxShadow="md" color= "#ffffff" position="fixed">
+    return <Box id="nav-menu" zIndex={1} bg={isscroll? colorMode==="light"? "#2c2244" : "#a298b3" : colorMode==="light"? "#13022C" : "#d3cedb"} w="100%" p="10px 0px" boxShadow="md" color= "#ffffff" position="fixed">
         <Box w="95%" m="auto" display={["flex", "flex", "flex"]} alignItems="center" justifyContent="space-between">
             <Box rounded="50%" mt="5px" mb="5px" className={colorMode==="light"? "rotateno":"rotateyes"}>
                 <AnchorLink href='#Home'><Image w={["30px", "30px", "40px"]} src={logo} alt="logo" /></AnchorLink>

@@ -112,8 +112,8 @@ function Project(){
         }
     ]
 
-    return <Box id="projects" w="full" bg={colorMode==="light"? "#13022C" : "#d3cedb"} color={colorMode==="light"? "#d3cedb" : "#13022C"} p="30px 0px" textAlign="center" pt={["40px", "60px", "80px"]}>
-        <Box id="Project" w="85%" m="auto">
+    return <Box id="Project" w="full" bg={colorMode==="light"? "#13022C" : "#d3cedb"} color={colorMode==="light"? "#d3cedb" : "#13022C"} p="30px 0px" textAlign="center" pt={["40px", "60px", "80px"]}>
+        <Box w="85%" m="auto">
             <Text mb="25px" color={colorMode==="light"? "white" : "#13022C"} textAlign="center" fontWeight="400" fontSize={["3xl", "4xl", "5xl"]}>Projects</Text>
             <Box display="grid" gap="30px" gridTemplateColumns={["repeat(1, 1fr)", "repeat(2, 1fr)", "repeat(3, 1fr)"]}>
                 {projectdata && projectdata.map((project)=> {

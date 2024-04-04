@@ -200,8 +200,8 @@ function Skills(){
 
     const { colorMode } = useColorMode();
 
-return <Box id="skills" w="full" bg={colorMode==="light"? "#13022C" : "#d3cedb"} color="#ffffff" p="30px 0px" mt="-2px" pt={["70px", "100px", "100px"]}>
-        <Box id="Skills" w="85%" m="auto" color={colorMode==="light"? "white" : "#13022C"}>
+return <Box id="Skills" w="full" bg={colorMode==="light"? "#13022C" : "#d3cedb"} color="#ffffff" p="30px 0px" mt="-2px" pt={["70px", "100px", "100px"]}>
+        <Box w="85%" m="auto" color={colorMode==="light"? "white" : "#13022C"}>
             <Text textAlign="center" mb="15px" fontWeight="400" fontSize={["2xl", "4xl", "5xl"]}>Technical Skills & Tools</Text>
             <Tabs variant='unstyled'>
                 <TabList m="20px auto" w={["80%", "85%", "55%"]} gap="5px" justifyContent="space-between">

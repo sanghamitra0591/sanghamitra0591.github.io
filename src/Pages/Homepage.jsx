@@ -8,9 +8,9 @@ import resume from "../Images/Sanghamitra-Satpathy-Resume.pdf";
 
 function Homepage(){
     const { colorMode } = useColorMode();
-    return <Box id="home" bg={colorMode==="light"? "#13022C" : "#d3cedb"}>
-        <Box id="Home" w="100.1156%" ml="-1.069px" pt={["50px", "50px", "50px"]} color="#e1cefd" bg={colorMode==="light"? "#13022C" : "#d3cedb"}>
-                <Box h="570px" w="85%" color={colorMode==="light"? "#d3cedb" : "#13022C"} m="auto" display={["inline", "inline", "flex"]} alignItems="center" justifyContent="space-around" pb="60px">
+    return <Box id="Home" bg={colorMode==="light"? "#13022C" : "#d3cedb"}>
+        <Box w="100%" ml="-1.069px" pt={["50px", "50px", "60px"]} color="#e1cefd" bg={colorMode==="light"? "#13022C" : "#d3cedb"}>
+                <Box h="650px" w="85%" color={colorMode==="light"? "#d3cedb" : "#13022C"} m="auto" display={["inline", "inline", "flex"]} alignItems="center" justifyContent="space-around" pb="80px">
                     <Box mt={["50px", "50px", "0px"]} w={["100%", "100%", "60%"]}>
                         <Box textAlign="left" pl={["20px", "60px", "20px"]}>
                             <Text  id="user-detail-intro" fontWeight="500" fontFamily="sans-serif" display="flex" alignItems="center" fontSize={["2xl", "3xl", "4xl"]}>Hi👋, my name is</Text>
@@ -40,7 +40,7 @@ function Homepage(){
                             </Box>
                         </Box>
                 </Box>
-                <Box bg={colorMode==="light"? "#C4A9EC" : "#301952"} p="5px" w={["45%", "35%", "25%"]} m="20px auto 0px auto" rounded="50%">
+                <Box bg={colorMode==="light"? "#C4A9EC" : "#301952"} p="5px" w={["45%", "35%", "25%"]} m="20px auto 15px auto" rounded="50%">
                     <Image className="home-img" boxShadow="xl" w="100%" rounded="50%" src={mypic} alt="img" />
                 </Box>
             </Box>

@@ -5,8 +5,8 @@ import gif from "../Images/aboutgif.gif";
 
 function About(){
     const { colorMode } = useColorMode();
-    return <Box id="about" className="about section" bg={colorMode==="light"? "linear-gradient(180deg, rgba(44,23,75,1) 45%, rgba(28,14,50,1) 99%)" : "#bdb6c9"} color="#ffffff" p="30px 0px" mt="-2px" pt={["50px", "70px", "80px"]}>
-        <Box id="About" w="87%" m="auto">
+    return <Box id="About" className="about section" bg={colorMode==="light"? "linear-gradient(180deg, rgba(44,23,75,1) 45%, rgba(28,14,50,1) 99%)" : "#bdb6c9"} color="#ffffff" p="30px 0px" mt="-2px" pt={["50px", "70px", "80px"]}>
+        <Box w="87%" m="auto">
             <Box display={["inline", "inline", "flex"]} justifyContent="space-between" alignItems="center">
                 <Box w={["90%", "80%", "45%"]} m="auto" color={colorMode==="light"? "white" : "#13022C"}>
                     <Text textAlign="center"  fontWeight="400" mt="20px" fontSize={["2xl", "3xl", "4xl"]}>About Me</Text>

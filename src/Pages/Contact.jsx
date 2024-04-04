@@ -45,8 +45,8 @@ function Contacts(){
     setValues(values => ({...values, [e.target.name]: e.target.value }));
   }
 
-    return <Box id="contact" bg={colorMode==="light"? "linear-gradient(180deg, rgba(44,23,75,1) 45%, rgba(28,14,50,1) 99%)" : "#bdb6c9"} color={colorMode==="light"? "white" : "#13022C"} p={["30px 0px", "30px 0px", "60px 0px"]} pt="75px">
-        <Text id="Contactt" fontWeight="400" fontSize={["2xl", "3xl", "4xl"]} textAlign="center" mb="20px">Contact Me</Text>
+    return <Box id="Contactt" bg={colorMode==="light"? "linear-gradient(180deg, rgba(44,23,75,1) 45%, rgba(28,14,50,1) 99%)" : "#bdb6c9"} color={colorMode==="light"? "white" : "#13022C"} p={["30px 0px", "30px 0px", "60px 0px"]} pt="75px">
+        <Text fontWeight="400" fontSize={["2xl", "3xl", "4xl"]} textAlign="center" mb="20px">Contact Me</Text>
         <Box w={["80%", "85%", "85%"]} m="auto" mt="50px" textAlign="center" p="60px auto" display={["inline", "inline", "flex"]} justifyContent="space-between" alignItems="center">
             <Box w={["80%", "80%", "40%"]} m="auto" display={["none", "none", "inline"]}>
                 <Box w="100%" p={["15px", "38px", "15px"]} display="grid" gap="20px" gridTemplateColumns={["Repeat(4, 1fr)", "Repeat(4, 1fr)", "Repeat(2, 1fr)"]}>
@@ -84,16 +84,16 @@ function Contacts(){
                     </Box>
                 </Box>
             </Box>
-            <Box  className={colorMode==="light"?"contactt": "contactlight"} width={["80%", "70%", "50%"]} m={["auto","auto", ""]} pt="40px">
-                <Box width="80%" m="auto">
+            <Box className={colorMode==="light"?"contactt": "contactlight"} width={["80%", "70%", "50%"]} m={["auto","auto", ""]} pt="40px">
+                <Box width="80%" m="auto" color={colorMode==="light"? "white" : "#13022C"}>
                     <form onSubmit={handleSubmit} >
                         <Text fontSize={["2xl", "4xl", "3xl"]} color={colorMode==="light"? "white" : "#13022C"} fontWeight="600">Message Me</Text>
                         <br/>
-                        <Input fontSize={["15px", "16px", "16px"]} outline={colorMode==="light"? "1px solid #C1B6DB" : "1px solid #13022C"} borderColor={colorMode==="light"? "rgba(200, 137, 230, 0.637)" : "#13022C"} w="100%" color={colorMode==="light"? "#13022C" : "#13022C"} value={values.fullName} required={"required"} onChange={handleChange} label="Full Name" name="fullName" type="text" placeholder="Enter your Name here"/>
+                        <Input _placeholder={{color : colorMode==="light"? "#999" : "#13022C"}} fontSize={["15px", "16px", "16px"]} outline={colorMode==="light"? "1px solid #C1B6DB" : "1px solid #13022C"} borderColor={colorMode==="light"? "rgba(200, 137, 230, 0.637)" : "#13022C"} w="100%" color={colorMode==="light"? "white" : "#13022C"} value={values.fullName} required={"required"} onChange={handleChange} label="Full Name" name="fullName" type="text" placeholder="Enter your Name here"/>
                         <br/>
-                        <Input fontSize={["15px", "16px", "16px"]} outline={colorMode==="light"? "1px solid #C1B6DB" : "1px solid #13022C"} mt="15px" borderColor={colorMode==="light"? "rgba(200, 137, 230, 0.637)" : "#13022C"} value={values.email} required={"required"} color={colorMode==="light"? "#13022C" : "#13022C"} onChange={handleChange} label="E-Mail" name="email" type="email" placeholder="Enter your Email Id here"/>
+                        <Input _placeholder={{color : colorMode==="light"? "#999" : "#13022C"}} fontSize={["15px", "16px", "16px"]} outline={colorMode==="light"? "1px solid #C1B6DB" : "1px solid #13022C"} mt="15px" borderColor={colorMode==="light"? "rgba(200, 137, 230, 0.637)" : "#13022C"} value={values.email} required={"required"} color={colorMode==="light"? "white" : "#13022C"} onChange={handleChange} label="E-Mail" name="email" type="email" placeholder="Enter your Email Id here"/>
                         <br/>
-                        <Textarea fontSize={["15px", "16px", "16px"]} outline={colorMode==="light"? "1px solid #C1B6DB" : "1px solid #13022C"} mt="15px" borderColor={colorMode==="light"? "rgba(200, 137, 230, 0.637)" : "#13022C"} value={values.message} required={"required"} color={colorMode==="#13022C"? "white" : "#13022C"} onChange={handleChange} label="Your message here" name="message" placeholder="Enter your Message here"/>
+                        <Textarea _placeholder={{color : colorMode==="light"? "#999" : "#13022C"}} fontSize={["15px", "16px", "16px"]} outline={colorMode==="light"? "1px solid #C1B6DB" : "1px solid #13022C"} mt="15px" borderColor={colorMode==="light"? "rgba(200, 137, 230, 0.637)" : "#13022C"} value={values.message} required={"required"} color={colorMode==="light"? "white" : "#13022C"} onChange={handleChange} label="Your message here" name="message" placeholder="Enter your Message here"/>
                         <br/>
                         <Button _hover={{bg:"#4E406F", color:"#ffffff"}} mt="15px" p={["10px", "10px", "15px"]} fontSize={["sm", "sm", "md"]} bg={colorMode==="light"? "#C1B6DB" : "#251942"} color={colorMode==="light"? "#13022c" : "white"} border="none" variant='solid' type="submit" _focus={{outline:"none"}} value="Send" rightIcon={<MdSend />}>Send</Button>
                     </form>
