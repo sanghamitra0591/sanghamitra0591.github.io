@@ -96,7 +96,7 @@ function Project(){
             img: tripadvisor,
             type: "Individual",
             desc: "A travel website, where user can login, signup, plan their trips, book flight, book hotels, wishlist the trips, view nearby restaurants, search by location etc.",
-            techstack: "React, Chakra UI, JavaScript, CSS",
+            techstack: "React, Chakra UI, JavaScript, HTML, CSS",
             livelink: "https://tripadvisor-clone1.vercel.app/",
             gitlink: "https://github.com/sanghamitra0591/trip-advisor-clone/"
         },
@@ -105,7 +105,7 @@ function Project(){
             name: "My Portfolio",
             img: (colorMode==="light" ? portfoliolight : portfoliodark),
             type: "Individual",
-            desc: "This is my portfolio which I made using React, Chakra UI, CSS, Javascript and Email.js. I have added features like theme, Chakra tabs, Email.js, which is fully responsive.",
+            desc: "This is my portfolio which I made using React, Chakra UI, CSS, Javascript and Email.js. with features like theme, Chakra tabs, Email.js, which is fully responsive.",
             techstack: "React, Chakra UI, JavaScript, CSS, Email.js",
             livelink: "https://sanghamitra0591.github.io/",
             gitlink: "https://github.com/sanghamitra0591/sanghamitra0591.github.io"
