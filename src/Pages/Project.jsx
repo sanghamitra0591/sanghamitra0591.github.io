@@ -50,16 +50,16 @@ function Project(){
             livelink: "https://makeshift-thread-5916-sankalp2009.vercel.app/",
             gitlink: "https://github.com/yadavsankt24/makeshift-thread-5916"
         },
-        {
-            id: 4,
-            name: "Google digital Garage Clone",
-            img: googledigitalgarage,
-            type: "Group",
-            desc: "A digital learing platform by Google, where user can signin, login, check for courses, certification, live training, etc.",
-            techstack: "HTML, CSS, JavaScript",
-            livelink: "https://google-digital-garage-clone.vercel.app/",
-            gitlink: "https://github.com/imrangadwal10/zonked-instrument-5361"
-        },
+        // {
+        //     id: 4,
+        //     name: "Google digital Garage Clone",
+        //     img: googledigitalgarage,
+        //     type: "Group",
+        //     desc: "A digital learing platform by Google, where user can signin, login, check for courses, certification, live training, etc.",
+        //     techstack: "HTML, CSS, JavaScript",
+        //     livelink: "https://google-digital-garage-clone.vercel.app/",
+        //     gitlink: "https://github.com/imrangadwal10/zonked-instrument-5361"
+        // },
         {
             id: 5,
             name: "Slideshow Maker",
@@ -80,16 +80,16 @@ function Project(){
             livelink: "https://receipe.vercel.app/",
             gitlink: "https://github.com/sanghamitra0591/exploring/tree/main/food-app-II"
         },
-        {
-            id: 7,
-            name: "Meanbuy Clone",
-            img: meanbuy,
-            type: "Individual",
-            desc: "An E-Commerce website having the unique feature which allows the users to sell their products as well. User can Login, Signup, Visit Seller's Page, Whatsapp Page, view products, add products to the cart etc.",
-            techstack: "HTML, CSS, JavaScript",
-            livelink: "https://meanbuy-clone-theta.vercel.app/",
-            gitlink: "https://github.com/sanghamitra0591/murky-rate-2238"
-        },
+        // {
+        //     id: 7,
+        //     name: "Meanbuy Clone",
+        //     img: meanbuy,
+        //     type: "Individual",
+        //     desc: "An E-Commerce website having the unique feature which allows the users to sell their products as well. User can Login, Signup, Visit Seller's Page, Whatsapp Page, view products, add products to the cart etc.",
+        //     techstack: "HTML, CSS, JavaScript",
+        //     livelink: "https://meanbuy-clone-theta.vercel.app/",
+        //     gitlink: "https://github.com/sanghamitra0591/murky-rate-2238"
+        // },
         {
             id: 8,
             name: "Trip Advisor Clone",
@@ -100,16 +100,16 @@ function Project(){
             livelink: "https://tripadvisor-clone1.vercel.app/",
             gitlink: "https://github.com/sanghamitra0591/trip-advisor-clone/"
         },
-        {
-            id: 9,
-            name: "My Portfolio",
-            img: (colorMode==="light" ? portfoliolight : portfoliodark),
-            type: "Individual",
-            desc: "This is my portfolio which I made using React, Chakra UI, CSS, Javascript and Email.js. with features like theme, Chakra tabs, Email.js, which is fully responsive.",
-            techstack: "React, Chakra UI, JavaScript, CSS, Email.js",
-            livelink: "https://sanghamitra0591.github.io/",
-            gitlink: "https://github.com/sanghamitra0591/sanghamitra0591.github.io"
-        }
+        // {
+        //     id: 9,
+        //     name: "My Portfolio",
+        //     img: (colorMode==="light" ? portfoliolight : portfoliodark),
+        //     type: "Individual",
+        //     desc: "This is my portfolio which I made using React, Chakra UI, CSS, Javascript and Email.js. with features like theme, Chakra tabs, Email.js, which is fully responsive.",
+        //     techstack: "React, Chakra UI, JavaScript, CSS, Email.js",
+        //     livelink: "https://sanghamitra0591.github.io/",
+        //     gitlink: "https://github.com/sanghamitra0591/sanghamitra0591.github.io"
+        // }
     ]
 
     return <Box id="Project" w="full" bg={colorMode==="light"? "#13022C" : "#d3cedb"} color={colorMode==="light"? "#d3cedb" : "#13022C"} p="30px 0px" textAlign="center" pt={["40px", "60px", "80px"]}>
