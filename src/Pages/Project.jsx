@@ -45,7 +45,7 @@ function Project(){
             name: "Nordstorm Clone",
             img: nordstorm,
             type: "Group",
-            techstack: "React, Chakra UI, JavaScript, Bootstrap",
+            techstack: "React, Chakra UI, JavaScript",
             desc: "An E-Commerce website where user can login, signup, view products, use filter and sort, add products to cart and place order after payment",
             livelink: "https://makeshift-thread-5916-sankalp2009.vercel.app/",
             gitlink: "https://github.com/yadavsankt24/makeshift-thread-5916"
@@ -96,7 +96,7 @@ function Project(){
             img: tripadvisor,
             type: "Individual",
             desc: "A travel website, where user can login, signup, plan their trips, book flight, book hotels, wishlist the trips, view nearby restaurants, search by location etc.",
-            techstack: "React, Chakra UI, JavaScript, HTML, CSS",
+            techstack: "React, Chakra UI, JavaScript",
             livelink: "https://tripadvisor-clone1.vercel.app/",
             gitlink: "https://github.com/sanghamitra0591/trip-advisor-clone/"
         },
