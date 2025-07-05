@@ -22,11 +22,11 @@ const Stats = () => {
         </Link>
       </Box>
  
-      <Box w={["50%", "62%", "60%"]} display= "flex" alignIttem="center" justifyContent="center" m="auto" mt={["", "10px", "0px"]} gap="30px">
+      <Box w={["60%", "62%", "60%"]} display= "flex" flexDirection={["column", "column", "row"]} alignIttem="center" justifyContent="center" m="auto" mt={["0px", "20px", "0px"]} gap={["0px", "30px", "30px"]}>
         <Link href="https://github.com/sanghamitra0591">  
           <Image
             id="github-top-langs"
-            align="center" h={["180px", "140px", "300px"]}
+            align="center" h={["130px", "140px", "300px"]}
             alt="img"
             src={colorMode==="light"?
             "https://github-readme-stats.vercel.app/api/top-langs/?username=sanghamitra0591&theme=midnight-purple":
@@ -36,7 +36,7 @@ const Stats = () => {
         <Link href="https://github.com/sanghamitra0591">
           <Image
             id="github-stats-card"
-            align="center" h={["200px", "140px", "300px"]} transform="scale(1.05)"
+            align="center" h={["140px", "140px", "300px"]}
             alt="img"
             src={colorMode==="light"?
               "https://github-readme-stats.vercel.app/api?username=sanghamitra0591&count_private=true&show_icons=true&theme=midnight-purple"
